@@ -371,6 +371,16 @@
       "qrCode": true,
       "id": 1785347334770,
       "created": "2026-07-29T17:48:54.770Z"
+    },
+    {
+      "name": "二维码生成工具",
+      "description": "将你想要转换成二维码的内容录入信息（如：链接、产品购买链接）填写好项目名称（如：天府宝贝卡扫码购买）点击生成二维码。则可生成带4种颜色风格带项目名称/不带项目名称的二维码",
+      "category": "AI工具,二维码生成,",
+      "url": "https://lzp5133084.github.io/heijin-qr-workshop/",
+      "icon": "cube",
+      "qrCode": true,
+      "id": 1785347645940,
+      "created": "2026-07-29T17:54:05.940Z"
     }
   ],
   "showcaseImages": [
@@ -511,7 +521,7 @@
     }
   ],
   "_meta": {
-    "lastUpdated": "2026-07-29T17:49:12.265Z",
+    "lastUpdated": "2026-07-29T17:54:08.946Z",
     "updatedBy": "军哥懂保",
     "version": "2.0",
     "platform": "github"
