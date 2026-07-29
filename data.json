@@ -315,12 +315,13 @@
     },
     {
       "id": 2,
-      "name": "风险评估问卷",
-      "description": "快速评估您的风险承受能力和保障需求",
+      "name": "金事通APP",
+      "description": "这是一款国家金融管理总局发布的APP，是中国银保信践行人民性、保护金融消费者权益而建设的一站式金融账户管理工具，它几乎可以查询你名下所有保单（一揽子服务）主要用于做保单整理，名下保单查询。",
       "icon": "clipboard-check",
-      "url": "#",
-      "category": "评估工具",
-      "qrCode": true
+      "url": "https://sj.qq.com/appdetail/com.sinosoft.csplatform?&from_wxz=1",
+      "category": "查询工具",
+      "qrCode": true,
+      "updated": "2026-07-29T18:23:41.583Z"
     },
     {
       "id": 3,
@@ -533,7 +534,7 @@
     }
   ],
   "_meta": {
-    "lastUpdated": "2026-07-29T18:16:59.738Z",
+    "lastUpdated": "2026-07-29T18:23:44.595Z",
     "updatedBy": "军哥懂保",
     "version": "2.0",
     "platform": "github"
