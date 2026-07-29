@@ -352,14 +352,15 @@
       "created": "2026-07-29T17:26:31.814Z"
     },
     {
-      "name": "客户信息汇总",
-      "description": "客户通过填写自己的相关9页资料后，可以导出Excel发给代理人，用于导入代理人资料库",
+      "name": "客户信息及保障检视",
+      "description": "客户通过填写自己的相关9页资料后，可以导出Excel发给代理人，用于导入代理人资料库，包含保单检视内容。",
       "category": "客户服务,资料收集,保险,保单检视",
       "url": "https://lzp5133084.github.io/nine-page-survey/",
       "icon": "cube",
       "qrCode": true,
       "id": 1785346442787,
-      "created": "2026-07-29T17:34:02.787Z"
+      "created": "2026-07-29T17:34:02.787Z",
+      "updated": "2026-07-29T17:43:08.346Z"
     }
   ],
   "showcaseImages": [
@@ -500,7 +501,7 @@
     }
   ],
   "_meta": {
-    "lastUpdated": "2026-07-29T17:35:43.833Z",
+    "lastUpdated": "2026-07-29T17:43:11.351Z",
     "updatedBy": "军哥懂保",
     "version": "2.0",
     "platform": "github"
