@@ -292,6 +292,7 @@ const AdminMode = {
         item[fieldName] = value;
         DataStore.set(rootKey, list);
         App.showToast('已保存：' + key, 'success');
+        this.autoSync();
       }
       return;
     }
@@ -319,6 +320,16 @@ const AdminMode = {
 
     DataStore.set(rootKey, data);
     App.showToast('已保存：' + key, 'success');
+    this.autoSync();
+  },
+
+  // 自动同步（防抖，避免频繁操作时多次请求）
+  autoSync() {
+    if (typeof RemoteSync === 'undefined' || !RemoteSync.hasToken()) return;
+    clearTimeout(this._syncTimer);
+    this._syncTimer = setTimeout(() => {
+      RemoteSync.saveRemoteData(false);
+    }, 3000); // 3秒内无新操作才同步
   },
 
   // 触发图片上传
@@ -391,6 +402,7 @@ const AdminMode = {
     App.showToast('图片已更新！', 'success');
     App.navigateTo(App.currentPage);
     setTimeout(() => this.bindEditable(), 200);
+    this.autoSync();
   },
 
   // 为卡片添加管理控件
@@ -566,6 +578,7 @@ const AdminMode = {
       this.bindEditable();
       this.makeAllTextEditable();
     }, 300);
+    this.autoSync();
   },
 
   // 删除列表项
@@ -578,6 +591,7 @@ const AdminMode = {
         this.bindEditable();
         this.makeAllTextEditable();
       }, 300);
+      this.autoSync();
     }
   },
 
@@ -694,6 +708,7 @@ const AdminMode = {
     App.showToast('已添加新内容', 'success');
     App.navigateTo(App.currentPage);
     setTimeout(() => this.bindEditable(), 200);
+    this.autoSync();
   },
 
   // 撤销
@@ -806,6 +821,14 @@ const AdminMode = {
         <i class="fas fa-upload"></i>
       </button>
 
+      <button onclick="AdminMode.syncToCloud()" class="px-3 py-2 bg-blue-500/20 text-blue-400 border border-blue-500/50 rounded-lg text-sm hover:bg-blue-500/30" title="同步到云端（让所有访客看到更新）">
+        <i class="fas fa-cloud-upload-alt"></i>
+      </button>
+
+      <button onclick="AdminMode.showCloudSettings()" class="px-3 py-2 bg-indigo-500/20 text-indigo-400 border border-indigo-500/50 rounded-lg text-sm hover:bg-indigo-500/30" title="云端同步设置">
+        <i class="fas fa-cog"></i>
+      </button>
+
       <button onclick="AdminMode.resetData()" class="px-3 py-2 bg-orange-500/20 text-orange-400 border border-orange-500/50 rounded-lg text-sm hover:bg-orange-500/30" title="重置数据">
         <i class="fas fa-redo"></i>
       </button>
@@ -816,9 +839,154 @@ const AdminMode = {
     `;
     document.body.appendChild(toolbar);
 
+    // 显示云端同步状态提示
+    if (typeof RemoteSync !== 'undefined' && !RemoteSync.hasToken()) {
+      App.showToast('提示：点击云端设置按钮配置 Token 后，修改内容才能同步给所有访客', 'info');
+    }
+
     // 隐藏原有的FAB菜单避免遮挡
     const fab = document.getElementById('fabMenu');
     if (fab) fab.style.bottom = '80px';
+  },
+
+  // 同步到云端
+  async syncToCloud() {
+    if (typeof RemoteSync === 'undefined') {
+      App.showToast('远程同步模块未加载', 'error');
+      return;
+    }
+
+    if (!RemoteSync.hasToken()) {
+      App.showToast('请先配置 GitHub Token', 'error');
+      this.showCloudSettings();
+      return;
+    }
+
+    App.showToast('正在同步到云端...', 'info');
+    await RemoteSync.saveRemoteData(true);
+  },
+
+  // 云端设置弹窗
+  showCloudSettings() {
+    const status = typeof RemoteSync !== 'undefined' ? RemoteSync.getStatus() : {};
+    const currentToken = typeof RemoteSync !== 'undefined' ? RemoteSync.getToken() : '';
+    const maskedToken = currentToken ? currentToken.slice(0, 8) + '****' + currentToken.slice(-4) : '';
+    const platform = status.platform || 'gitee';
+    const platformName = platform === 'gitee' ? 'Gitee（推荐，国内访问快）' : 'GitHub';
+
+    const modal = document.createElement('div');
+    modal.className = 'fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-md p-4';
+    modal.innerHTML = `
+      <div class="bg-cyber-card border-2 border-cyber-cyan rounded-2xl p-6 max-w-md w-full slide-up shadow-2xl max-h-[90vh] overflow-y-auto">
+        <div class="text-center mb-6">
+          <div class="w-14 h-14 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-xl flex items-center justify-center mx-auto mb-3">
+            <i class="fas fa-cloud text-2xl text-white"></i>
+          </div>
+          <h2 class="text-xl font-bold text-white">云端同步设置</h2>
+          <p class="text-gray-400 text-sm mt-1">配置后，管理员修改的内容将同步给所有访客</p>
+        </div>
+
+        <div class="space-y-4">
+          <div class="bg-cyber-darker/50 rounded-lg p-3 text-sm">
+            <div class="flex justify-between mb-2">
+              <span class="text-gray-400">当前平台：</span>
+              <span class="text-cyber-cyan">${platformName}</span>
+            </div>
+            <div class="flex justify-between mb-2">
+              <span class="text-gray-400">同步状态：</span>
+              <span class="${status.isConfigured ? 'text-green-400' : 'text-red-400'}">${status.isConfigured ? '✓ 已配置' : '✗ 未配置'}</span>
+            </div>
+            <div class="flex justify-between mb-2">
+              <span class="text-gray-400">当前 Token：</span>
+              <span class="text-gray-300 text-xs">${maskedToken || '未设置'}</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-gray-400">上次同步：</span>
+              <span class="text-gray-300 text-xs">${status.lastSyncTime ? new Date(status.lastSyncTime).toLocaleString('zh-CN') : '从未'}</span>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-sm text-gray-400 mb-2">选择同步平台</label>
+            <div class="grid grid-cols-2 gap-2">
+              <button onclick="AdminMode.switchPlatform('gitee')" class="p-2 border-2 ${platform === 'gitee' ? 'border-cyber-cyan bg-cyber-cyan/10 text-cyber-cyan' : 'border-cyber-border text-gray-400'} rounded-lg text-sm">
+                🟢 Gitee（推荐）
+              </button>
+              <button onclick="AdminMode.switchPlatform('github')" class="p-2 border-2 ${platform === 'github' ? 'border-cyber-cyan bg-cyber-cyan/10 text-cyber-cyan' : 'border-cyber-border text-gray-400'} rounded-lg text-sm">
+                🐙 GitHub
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-sm text-gray-400 mb-2">${platformName} Token</label>
+            <input type="password" id="githubTokenInput" placeholder="${platform === 'gitee' ? 'Gitee 私人令牌' : 'ghp_xxxxxxxxxxxx'}" value="${currentToken}" class="input-cyber">
+            <p class="text-xs text-gray-500 mt-1">
+              ${platform === 'gitee' 
+                ? '在 Gitee → 设置 → 私人令牌 中创建，需要 projects 权限' 
+                : '需要 repo 权限的 GitHub Token'}
+            </p>
+          </div>
+
+          <div class="bg-blue-500/10 border border-blue-500/30 rounded-lg p-3 text-xs text-blue-300">
+            <i class="fas fa-info-circle mr-1"></i>
+            <strong>使用流程：</strong><br>
+            1. 配置 Token 并保存<br>
+            2. 修改网站内容（自动同步）<br>
+            3. 或点击"立即同步"按钮手动同步<br>
+            4. 其他访客刷新页面即可看到更新（约1-2分钟生效）
+          </div>
+
+          <div class="flex gap-2">
+            <button onclick="AdminMode.saveToken()" class="flex-1 btn-primary">
+              <span>保存配置</span>
+            </button>
+            <button onclick="AdminMode.testSync()" class="flex-1 bg-green-500/20 text-green-400 border border-green-500/50 rounded-lg py-2 hover:bg-green-500/30">
+              <i class="fas fa-sync mr-1"></i>立即同步
+            </button>
+          </div>
+
+          <button onclick="this.closest('.fixed').remove()" class="w-full btn-secondary">关闭</button>
+        </div>
+      </div>
+    `;
+    document.body.appendChild(modal);
+  },
+
+  // 切换平台
+  switchPlatform(platform) {
+    if (typeof RemoteSync !== 'undefined') {
+      RemoteSync.setPlatform(platform);
+      this.showCloudSettings();
+    }
+  },
+
+  // 保存 Token
+  saveToken() {
+    const token = document.getElementById('githubTokenInput').value.trim();
+    if (!token) {
+      App.showToast('请输入 Token', 'error');
+      return;
+    }
+    if (typeof RemoteSync !== 'undefined') {
+      RemoteSync.setToken(token);
+      App.showToast('Token 已保存，现在可以同步到云端了', 'success');
+      document.querySelector('.fixed.bg-black\\/80')?.remove();
+    }
+  },
+
+  // 测试同步
+  async testSync() {
+    const token = document.getElementById('githubTokenInput').value.trim();
+    if (!token) {
+      App.showToast('请先输入 Token', 'error');
+      return;
+    }
+    if (typeof RemoteSync !== 'undefined') {
+      RemoteSync.setToken(token);
+    }
+    App.showToast('正在测试同步...', 'info');
+    await this.syncToCloud();
   },
 
   // 添加新内容到当前列表
