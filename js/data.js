@@ -16,6 +16,11 @@ const DataStore = {
       ]);
     }
     this.updateVisitCount();
+
+    // 异步加载远程数据（所有访客都能看到管理员更新）
+    if (typeof RemoteSync !== 'undefined') {
+      RemoteSync.init();
+    }
   },
 
   // 确保数据存在
