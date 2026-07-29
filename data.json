@@ -384,14 +384,14 @@
     },
     {
       "name": "直播PK互动工具",
-      "description": "点击“二维码图标”用户可通过“扫码“打开程序页面；\n1、灵魂拷问题库，用于PK过程中的互动；\n2、违禁词查询；\n3、教如何做好主播；",
+      "description": "点击“二维码图标”用户可通过“扫码“打开程序页面；该程序主要是用于直播间互动；\n1、灵魂拷问题库，用于PK过程中的互动；\n2、违禁词查询；\n3、教如何做好主播；",
       "category": "自媒体工具,直播,直播PK,怎么打PK",
       "url": "https://lzp5133084.github.io/pk-live-soul-question/",
       "icon": "cube",
       "qrCode": true,
       "id": 1785348818548,
       "created": "2026-07-29T18:13:38.548Z",
-      "updated": "2026-07-29T18:14:40.861Z"
+      "updated": "2026-07-29T18:15:14.734Z"
     }
   ],
   "showcaseImages": [
@@ -532,7 +532,7 @@
     }
   ],
   "_meta": {
-    "lastUpdated": "2026-07-29T18:14:43.865Z",
+    "lastUpdated": "2026-07-29T18:15:17.737Z",
     "updatedBy": "军哥懂保",
     "version": "2.0",
     "platform": "github"
