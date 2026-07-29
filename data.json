@@ -361,6 +361,16 @@
       "id": 1785346442787,
       "created": "2026-07-29T17:34:02.787Z",
       "updated": "2026-07-29T17:44:04.437Z"
+    },
+    {
+      "name": "小区客户管理系统",
+      "description": "建立自己的保险客户管理系统，以小区为单位，便捷查看，只保存到自己本地，如果录入完，建议不定期导出数据。后期可能会更新，我这边更新，数据会清零。导出后，更新完可以导入。",
+      "category": "客户服务,上门服务,小区客户",
+      "url": "https://lzp5133084.github.io/customer-management/",
+      "icon": "cube",
+      "qrCode": true,
+      "id": 1785347334770,
+      "created": "2026-07-29T17:48:54.770Z"
     }
   ],
   "showcaseImages": [
@@ -501,7 +511,7 @@
     }
   ],
   "_meta": {
-    "lastUpdated": "2026-07-29T17:44:07.442Z",
+    "lastUpdated": "2026-07-29T17:48:57.777Z",
     "updatedBy": "军哥懂保",
     "version": "2.0",
     "platform": "github"
