@@ -1,0 +1,658 @@
+/* ========== 全局样式 ========== */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #00f5ff #0a0e1a;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: #0a0e1a;
+}
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00f5ff, #bf00ff);
+  border-radius: 4px;
+}
+
+/* ========== 导航链接样式 ========== */
+.nav-link {
+  color: #9ca3af;
+  position: relative;
+}
+.nav-link:hover {
+  color: #00f5ff;
+}
+.nav-link.active {
+  color: #00f5ff;
+  background: rgba(0, 245, 255, 0.1);
+}
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 2px;
+  background: linear-gradient(90deg, #00f5ff, #bf00ff);
+  border-radius: 2px;
+}
+
+/* ========== 玻璃拟态卡片 ========== */
+.glass-card {
+  background: linear-gradient(135deg, rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.6));
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(30, 58, 95, 0.5);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+.glass-card:hover {
+  border-color: rgba(0, 245, 255, 0.5);
+  box-shadow: 0 8px 32px rgba(0, 245, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+/* ========== 霓虹边框效果 ========== */
+.neon-border {
+  position: relative;
+  background: #111827;
+  border-radius: 16px;
+}
+.neon-border::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 18px;
+  padding: 2px;
+  background: linear-gradient(135deg, #00f5ff, #bf00ff);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* ========== 渐变文字 ========== */
+.gradient-text {
+  background: linear-gradient(135deg, #00f5ff 0%, #bf00ff 50%, #00f5ff 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 4s ease infinite;
+}
+
+/* ========== 按钮样式 ========== */
+.btn-primary {
+  background: linear-gradient(135deg, #00f5ff 0%, #bf00ff 100%);
+  color: #0a0e1a;
+  font-weight: 600;
+  padding: 12px 32px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #bf00ff 0%, #00f5ff 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.btn-primary:hover::before {
+  opacity: 1;
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 245, 255, 0.4);
+}
+.btn-primary span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #00f5ff;
+  font-weight: 600;
+  padding: 12px 32px;
+  border-radius: 12px;
+  border: 2px solid #00f5ff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.btn-secondary:hover {
+  background: rgba(0, 245, 255, 0.1);
+  box-shadow: 0 8px 25px rgba(0, 245, 255, 0.2);
+}
+
+/* ========== 输入框样式 ========== */
+.input-cyber {
+  background: rgba(17, 24, 39, 0.6);
+  border: 1px solid rgba(30, 58, 95, 0.5);
+  border-radius: 10px;
+  padding: 12px 16px;
+  color: #f3f4f6;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+.input-cyber:focus {
+  outline: none;
+  border-color: #00f5ff;
+  box-shadow: 0 0 0 3px rgba(0, 245, 255, 0.15);
+}
+.input-cyber::placeholder {
+  color: #6b7280;
+}
+
+/* ========== 时间轴样式 ========== */
+.timeline-item {
+  position: relative;
+  padding-left: 40px;
+  padding-bottom: 30px;
+  border-left: 2px solid rgba(0, 245, 255, 0.3);
+  margin-left: 10px;
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -9px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00f5ff, #bf00ff);
+  border: 3px solid #0a0e1a;
+  box-shadow: 0 0 15px rgba(0, 245, 255, 0.5);
+}
+.timeline-item:last-child {
+  border-left-color: transparent;
+}
+
+/* ========== 荣誉卡片 ========== */
+.honor-card {
+  background: linear-gradient(135deg, rgba(17, 24, 39, 0.9), rgba(30, 58, 95, 0.5));
+  border: 1px solid rgba(0, 245, 255, 0.3);
+  border-radius: 16px;
+  padding: 24px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.honor-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, rgba(191, 0, 255, 0.3), transparent);
+  border-radius: 50%;
+}
+.honor-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  border-color: rgba(0, 245, 255, 0.8);
+  box-shadow: 0 15px 40px rgba(0, 245, 255, 0.2);
+}
+
+/* ========== 案例卡片 ========== */
+.case-card {
+  background: linear-gradient(135deg, rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.6));
+  border: 1px solid rgba(30, 58, 95, 0.5);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.case-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(191, 0, 255, 0.6);
+  box-shadow: 0 20px 50px rgba(191, 0, 255, 0.2);
+}
+.case-card img, .case-card .case-placeholder {
+  transition: transform 0.4s ease;
+}
+.case-card:hover img, .case-card:hover .case-placeholder {
+  transform: scale(1.05);
+}
+
+/* ========== 工具卡片 ========== */
+.tool-card {
+  background: linear-gradient(135deg, rgba(17, 24, 39, 0.9), rgba(30, 58, 95, 0.4));
+  border: 1px solid rgba(0, 245, 255, 0.2);
+  border-radius: 16px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+.tool-card:hover {
+  border-color: rgba(0, 245, 255, 0.6);
+  background: linear-gradient(135deg, rgba(17, 24, 39, 1), rgba(0, 245, 255, 0.1));
+}
+
+/* ========== AI对话气泡 ========== */
+.chat-bubble {
+  max-width: 80%;
+  padding: 14px 18px;
+  border-radius: 18px;
+  margin-bottom: 12px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+.chat-bubble.user {
+  background: linear-gradient(135deg, #00f5ff, #0066ff);
+  color: #0a0e1a;
+  margin-left: auto;
+  border-bottom-right-radius: 4px;
+}
+.chat-bubble.ai {
+  background: rgba(17, 24, 39, 0.8);
+  border: 1px solid rgba(0, 245, 255, 0.3);
+  color: #f3f4f6;
+  margin-right: auto;
+  border-bottom-left-radius: 4px;
+}
+.chat-bubble.ai::before {
+  content: 'AI';
+  display: inline-block;
+  background: linear-gradient(135deg, #00f5ff, #bf00ff);
+  color: #0a0e1a;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-right: 8px;
+}
+
+/* ========== 标签样式 ========== */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  background: rgba(0, 245, 255, 0.15);
+  color: #00f5ff;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid rgba(0, 245, 255, 0.3);
+}
+
+/* ========== 统计卡片 ========== */
+.stat-card {
+  background: linear-gradient(135deg, rgba(17, 24, 39, 0.9), rgba(30, 58, 95, 0.5));
+  border: 1px solid rgba(30, 58, 95, 0.5);
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(0, 245, 255, 0.1), transparent 40%);
+  animation: spin 20s linear infinite;
+}
+.stat-card > * {
+  position: relative;
+  z-index: 1;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ========== 扫描线效果 ========== */
+.scan-line {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #00f5ff, transparent);
+  opacity: 0.5;
+  animation: scan 4s linear infinite;
+}
+
+/* ========== 网格背景 ========== */
+.grid-bg {
+  background-image: 
+    linear-gradient(rgba(0, 245, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 245, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* ========== 动画入场 ========== */
+.fade-in {
+  animation: fadeIn 0.6s ease forwards;
+  opacity: 0;
+}
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+.slide-up {
+  animation: slideUp 0.6s ease forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+@keyframes slideUp {
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========== 英雄区特殊样式 ========== */
+.hero-title {
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.hero-subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: #9ca3af;
+  line-height: 1.6;
+}
+
+/* ========== 响应式调整 ========== */
+@media (max-width: 768px) {
+  .timeline-item {
+    padding-left: 30px;
+    margin-left: 5px;
+  }
+  .chat-bubble {
+    max-width: 90%;
+  }
+}
+
+/* ========== 悬浮光球效果 ========== */
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* ========== 加载动画 ========== */
+.loader {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(0, 245, 255, 0.2);
+  border-top-color: #00f5ff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+/* ========== 头像样式 ========== */
+.avatar-glow {
+  position: relative;
+  display: inline-block;
+}
+.avatar-glow::before {
+  content: '';
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00f5ff, #bf00ff);
+  opacity: 0.6;
+  filter: blur(20px);
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+
+/* ========== 数据统计仪表盘 ========== */
+.dashboard-card {
+  background: linear-gradient(135deg, rgba(17, 24, 39, 0.95), rgba(17, 24, 39, 0.85));
+  border: 1px solid rgba(30, 58, 95, 0.6);
+  border-radius: 20px;
+  padding: 28px;
+}
+
+/* ========== 进度条 ========== */
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: rgba(30, 58, 95, 0.5);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #00f5ff, #bf00ff);
+  border-radius: 4px;
+  transition: width 1s ease;
+}
+
+/* ========== 移动端优化 ========== */
+@media (max-width: 640px) {
+  .glass-card {
+    border-radius: 12px;
+  }
+  .honor-card {
+    padding: 18px;
+  }
+}
+
+/* ========== 管理员模式样式 ========== */
+@keyframes adminShake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+/* 可编辑元素高亮 */
+.admin-mode .admin-editable {
+  outline: 1px dashed rgba(0, 245, 255, 0.5);
+  outline-offset: 4px;
+  cursor: text;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+}
+.admin-mode .admin-editable:hover {
+  outline-color: #00f5ff;
+  background: rgba(0, 245, 255, 0.08);
+  box-shadow: 0 0 15px rgba(0, 245, 255, 0.2);
+}
+.admin-mode .admin-editable:focus {
+  outline: 2px solid #00f5ff;
+  background: rgba(0, 245, 255, 0.1);
+  box-shadow: 0 0 20px rgba(0, 245, 255, 0.3);
+}
+
+/* 可编辑图片提示 */
+.admin-mode .admin-image-editable {
+  cursor: pointer;
+  position: relative;
+  outline: 2px dashed rgba(191, 0, 255, 0.5);
+  outline-offset: 4px;
+  transition: all 0.2s ease;
+}
+.admin-mode .admin-image-editable:hover {
+  outline-color: #bf00ff;
+  box-shadow: 0 0 20px rgba(191, 0, 255, 0.4);
+}
+.admin-mode .admin-image-editable:hover::after {
+  content: '📷 点击替换图片';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: #00f5ff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  pointer-events: none;
+  white-space: nowrap;
+  border: 1px solid #00f5ff;
+}
+
+/* 卡片管理控件 */
+.admin-card-control {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  gap: 4px;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.admin-mode .honor-card:hover .admin-card-control,
+.admin-mode .timeline-item:hover .admin-card-control,
+.admin-mode .case-card:hover .admin-card-control {
+  opacity: 1;
+}
+.admin-card-control button {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 245, 255, 0.5);
+  color: #00f5ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.2s ease;
+}
+.admin-card-control button:hover {
+  background: rgba(0, 245, 255, 0.2);
+  transform: scale(1.1);
+}
+.admin-card-control button[title="删除"]:hover {
+  background: rgba(239, 68, 68, 0.3);
+  border-color: #ef4444;
+  color: #ef4444;
+}
+
+/* 管理员工具栏 */
+#adminToolbar {
+  box-shadow: 0 8px 32px rgba(0, 245, 255, 0.2);
+  border: 1px solid rgba(0, 245, 255, 0.3);
+  animation: slideUp 0.3s ease;
+}
+
+/* 管理员模式全局指示器 */
+body.admin-mode::before {
+  content: '🛡️ 管理员模式已开启';
+  position: fixed;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #00f5ff, #bf00ff);
+  color: #0a0e1a;
+  padding: 4px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  z-index: 95;
+  pointer-events: none;
+  box-shadow: 0 4px 15px rgba(0, 245, 255, 0.4);
+}
+
+/* ========== 轮播组件样式 ========== */
+.carousel-track {
+  position: relative;
+  width: 100%;
+}
+
+.carousel-slide {
+  display: none;
+  transition: opacity 0.5s ease;
+}
+
+.carousel-slide.active {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(10, 14, 26, 0.9), transparent);
+  padding-top: 30px;
+}
+
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(0, 245, 255, 0.5);
+  border-radius: 50%;
+  color: #00f5ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.carousel-nav:hover {
+  background: rgba(0, 245, 255, 0.2);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-nav.prev {
+  left: 10px;
+}
+
+.carousel-nav.next {
+  right: 10px;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.carousel-dot.active {
+  background: #00f5ff;
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(0, 245, 255, 0.6);
+}
+
+.carousel-dot:hover {
+  background: rgba(0, 245, 255, 0.6);
+}

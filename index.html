@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>军哥懂保 · 个人展示门户 | 2027</title>
+<meta name="description" content="军哥懂保 - 个人履历、荣誉展示、案例呈现、AI智慧问答平台">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        'cyber-cyan': '#00f5ff',
+        'cyber-purple': '#bf00ff',
+        'cyber-blue': '#0066ff',
+        'cyber-dark': '#0a0e1a',
+        'cyber-darker': '#050810',
+        'cyber-card': '#111827',
+        'cyber-border': '#1e3a5f',
+      },
+      animation: {
+        'glow': 'glow 2s ease-in-out infinite alternate',
+        'float': 'float 6s ease-in-out infinite',
+        'scan': 'scan 4s linear infinite',
+        'pulse-ring': 'pulseRing 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite',
+        'gradient-shift': 'gradientShift 8s ease infinite',
+      },
+      keyframes: {
+        glow: {
+          '0%': { boxShadow: '0 0 5px #00f5ff, 0 0 10px #00f5ff' },
+          '100%': { boxShadow: '0 0 20px #00f5ff, 0 0 30px #bf00ff' },
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-20px)' },
+        },
+        scan: {
+          '0%': { transform: 'translateY(-100%)' },
+          '100%': { transform: 'translateY(100%)' },
+        },
+        pulseRing: {
+          '0%': { transform: 'scale(0.8)', opacity: '1' },
+          '100%': { transform: 'scale(2)', opacity: '0' },
+        },
+        gradientShift: {
+          '0%, 100%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+        },
+      },
+    },
+  },
+};
+</script>
+</head>
+<body class="bg-cyber-dark text-gray-100 min-h-screen">
+
+<!-- 背景动态效果 -->
+<div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-br from-cyber-darker via-cyber-dark to-cyber-darker"></div>
+  <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-cyber-cyan/5 rounded-full blur-3xl animate-float"></div>
+  <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyber-purple/5 rounded-full blur-3xl animate-float" style="animation-delay: 3s;"></div>
+  <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 256 256%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noise%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.9%22 numOctaves=%224%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noise)%22/%3E%3C/svg%3E'); opacity: 0.03;"></div>
+</div>
+
+<!-- 导航栏 -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-xl bg-cyber-dark/80 border-b border-cyber-border/30">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo -->
+      <div class="flex items-center space-x-3 cursor-pointer" onclick="navigateTo('home')">
+        <div class="relative">
+          <div class="w-10 h-10 bg-gradient-to-br from-cyber-cyan to-cyber-purple rounded-lg flex items-center justify-center font-bold text-cyber-dark">
+            军
+          </div>
+          <div class="absolute inset-0 rounded-lg animate-pulse-ring border-2 border-cyber-cyan"></div>
+        </div>
+        <div>
+          <span class="text-lg font-bold bg-gradient-to-r from-cyber-cyan to-cyber-purple bg-clip-text text-transparent">军哥懂保</span>
+          <span class="text-xs text-gray-400 block">个人展示门户</span>
+        </div>
+      </div>
+
+      <!-- 桌面端导航 -->
+      <div class="hidden md:flex items-center space-x-1">
+        <a onclick="navigateTo('home')" class="nav-link active px-4 py-2 rounded-lg text-sm font-medium transition-all" data-page="home">
+          <i class="fas fa-home mr-1"></i> 首页
+        </a>
+        <a onclick="navigateTo('resume')" class="nav-link px-4 py-2 rounded-lg text-sm font-medium transition-all" data-page="resume">
+          <i class="fas fa-user-graduate mr-1"></i> 履历
+        </a>
+        <a onclick="navigateTo('honors')" class="nav-link px-4 py-2 rounded-lg text-sm font-medium transition-all" data-page="honors">
+          <i class="fas fa-trophy mr-1"></i> 荣誉
+        </a>
+        <a onclick="navigateTo('business')" class="nav-link px-4 py-2 rounded-lg text-sm font-medium transition-all" data-page="business">
+          <i class="fas fa-briefcase mr-1"></i> 业务
+        </a>
+        <a onclick="navigateTo('tools')" class="nav-link px-4 py-2 rounded-lg text-sm font-medium transition-all" data-page="tools">
+          <i class="fas fa-toolbox mr-1"></i> 小工具
+        </a>
+        <a onclick="navigateTo('generator')" class="nav-link px-4 py-2 rounded-lg text-sm font-medium transition-all" data-page="generator">
+          <i class="fas fa-magic mr-1"></i> 子网页
+        </a>
+        <a onclick="navigateTo('ai')" class="nav-link px-4 py-2 rounded-lg text-sm font-medium transition-all" data-page="ai">
+          <i class="fas fa-robot mr-1"></i> AI问答
+        </a>
+        <a onclick="navigateTo('contact')" class="nav-link px-4 py-2 rounded-lg text-sm font-medium transition-all" data-page="contact">
+          <i class="fas fa-envelope mr-1"></i> 联系
+        </a>
+      </div>
+
+      <!-- 移动端菜单按钮 -->
+      <button id="mobileMenuBtn" class="md:hidden text-cyber-cyan p-2" onclick="toggleMobileMenu()">
+        <i class="fas fa-bars text-xl"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- 移动端导航 -->
+  <div id="mobileMenu" class="hidden md:hidden bg-cyber-darker/95 backdrop-blur-xl border-t border-cyber-border/30">
+    <div class="px-4 py-2 space-y-1">
+      <a onclick="navigateTo('home')" class="mobile-nav flex items-center px-4 py-3 rounded-lg text-sm font-medium hover:bg-cyber-cyan/10" data-page="home">
+        <i class="fas fa-home w-6 text-cyber-cyan"></i> 首页
+      </a>
+      <a onclick="navigateTo('resume')" class="mobile-nav flex items-center px-4 py-3 rounded-lg text-sm font-medium hover:bg-cyber-cyan/10" data-page="resume">
+        <i class="fas fa-user-graduate w-6 text-cyber-cyan"></i> 履历介绍
+      </a>
+      <a onclick="navigateTo('honors')" class="mobile-nav flex items-center px-4 py-3 rounded-lg text-sm font-medium hover:bg-cyber-cyan/10" data-page="honors">
+        <i class="fas fa-trophy w-6 text-cyber-cyan"></i> 荣誉展示
+      </a>
+      <a onclick="navigateTo('business')" class="mobile-nav flex items-center px-4 py-3 rounded-lg text-sm font-medium hover:bg-cyber-cyan/10" data-page="business">
+        <i class="fas fa-briefcase w-6 text-cyber-cyan"></i> 业务范围
+      </a>
+      <a onclick="navigateTo('tools')" class="mobile-nav flex items-center px-4 py-3 rounded-lg text-sm font-medium hover:bg-cyber-cyan/10" data-page="tools">
+        <i class="fas fa-toolbox w-6 text-cyber-cyan"></i> 实用小工具
+      </a>
+      <a onclick="navigateTo('generator')" class="mobile-nav flex items-center px-4 py-3 rounded-lg text-sm font-medium hover:bg-cyber-cyan/10" data-page="generator">
+        <i class="fas fa-magic w-6 text-cyber-cyan"></i> 子网页生成
+      </a>
+      <a onclick="navigateTo('ai')" class="mobile-nav flex items-center px-4 py-3 rounded-lg text-sm font-medium hover:bg-cyber-cyan/10" data-page="ai">
+        <i class="fas fa-robot w-6 text-cyber-cyan"></i> AI智慧问答
+      </a>
+      <a onclick="navigateTo('contact')" class="mobile-nav flex items-center px-4 py-3 rounded-lg text-sm font-medium hover:bg-cyber-cyan/10" data-page="contact">
+        <i class="fas fa-envelope w-6 text-cyber-cyan"></i> 需求对接
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- 主内容区 -->
+<main id="mainContent" class="pt-16 relative z-10"></main>
+
+<!-- 页脚 -->
+<footer class="relative z-10 bg-cyber-darker/80 border-t border-cyber-border/30 backdrop-blur-xl mt-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <div class="flex items-center space-x-3 mb-4">
+          <div class="w-10 h-10 bg-gradient-to-br from-cyber-cyan to-cyber-purple rounded-lg flex items-center justify-center font-bold text-cyber-dark">军</div>
+          <span class="text-lg font-bold bg-gradient-to-r from-cyber-cyan to-cyber-purple bg-clip-text text-transparent">军哥懂保</span>
+        </div>
+        <p class="text-gray-400 text-sm">专业保险顾问，致力于为您提供最优质的风险保障方案。</p>
+      </div>
+      <div>
+        <h4 class="text-cyber-cyan font-semibold mb-4">快速导航</h4>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a onclick="navigateTo('home')" class="hover:text-cyber-cyan cursor-pointer">首页</a></li>
+          <li><a onclick="navigateTo('resume')" class="hover:text-cyber-cyan cursor-pointer">个人履历</a></li>
+          <li><a onclick="navigateTo('honors')" class="hover:text-cyber-cyan cursor-pointer">荣誉展示</a></li>
+          <li><a onclick="navigateTo('ai')" class="hover:text-cyber-cyan cursor-pointer">AI问答</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-cyber-cyan font-semibold mb-4">联系方式</h4>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><i class="fab fa-weixin text-green-500 mr-2"></i>微信号：xunijiayuan</li>
+          <li><i class="fas fa-phone text-cyber-cyan mr-2"></i>电话：18180309010</li>
+          <li><i class="fas fa-envelope text-cyber-purple mr-2"></i>邮箱：100469004@qq.com</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-cyber-cyan font-semibold mb-4">技术支持</h4>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li>AI驱动 · 智能交互</li>
+          <li>三端适配 · 随时随地</li>
+          <li>© 2027 军哥懂保 版权所有</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-cyber-border/30 mt-8 pt-8 text-center text-gray-500 text-sm">
+      <p>Designed with <i class="fas fa-heart text-red-500"></i> by 军哥懂保 | 2027年科技风</p>
+      <p class="mt-1 text-xs">本站已被访问 <span id="visitCount" class="text-cyber-cyan font-mono">0</span> 次</p>
+    </div>
+  </div>
+</footer>
+
+<!-- 浮动操作按钮 -->
+<div id="fabMenu" class="fixed bottom-6 right-6 z-40 space-y-3">
+  <button class="fab-item w-12 h-12 bg-cyber-card border border-cyber-border rounded-full flex items-center justify-center text-cyber-cyan hover:bg-cyber-cyan/20 transition-all group" onclick="navigateTo('ai')" title="AI问答">
+    <i class="fas fa-robot"></i>
+  </button>
+  <button class="fab-item w-12 h-12 bg-cyber-card border border-cyber-border rounded-full flex items-center justify-center text-cyber-purple hover:bg-cyber-purple/20 transition-all group" onclick="navigateTo('generator')" title="生成子网页">
+    <i class="fas fa-magic"></i>
+  </button>
+  <button class="fab-item w-12 h-12 bg-gradient-to-br from-cyber-cyan to-cyber-purple rounded-full flex items-center justify-center text-white hover:scale-110 transition-all animate-glow" onclick="scrollToTop()" title="返回顶部">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+</div>
+
+<!-- 全局提示容器 -->
+<div id="toastContainer" class="fixed top-20 right-4 z-50 space-y-2"></div>
+
+<!-- 二维码弹窗 -->
+<div id="qrModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 backdrop-blur-sm" onclick="closeQRModal()">
+  <div class="bg-cyber-card border border-cyber-border rounded-2xl p-6 max-w-sm mx-4" onclick="event.stopPropagation()">
+    <h3 class="text-xl font-bold text-center text-cyber-cyan mb-4">扫码访问</h3>
+    <div id="qrContainer" class="flex justify-center mb-4"></div>
+    <p class="text-center text-gray-400 text-sm mb-4">扫描二维码在手机端查看</p>
+    <button onclick="closeQRModal()" class="w-full py-2 bg-cyber-cyan/20 hover:bg-cyber-cyan/30 text-cyber-cyan rounded-lg transition-all">关闭</button>
+  </div>
+</div>
+
+<!-- 脚本加载 -->
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/pages.js"></script>
+<script src="js/admin.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
