@@ -665,6 +665,11 @@ const App = {
     // 关闭弹窗并刷新页面
     form.closest('.fixed').remove();
     this.navigateTo(this.currentPage);
+
+    // 自动同步到云端
+    if (typeof AdminMode !== 'undefined' && AdminMode.autoSync) {
+      AdminMode.autoSync();
+    }
   },
 
   // ========== 图片展示管理 ==========
