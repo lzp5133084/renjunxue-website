@@ -1,0 +1,508 @@
+{
+  "profile": {
+    "name": "军哥懂保",
+    "title": "专业保险顾问 & AI智能助手",
+    "avatar": "军",
+    "bio": "本人从事保险行业十年，专注于为客户提供专业的【个人/企业】风险规划与保障方案。同时热衷于AI技术研究，致力于将保险服务与人工智能AI深度进行融合，为客户带来更智能、更高效的服务体验，提供更大更广更深的多元化解决问题能力。",
+    "skills": [
+      "保险规划",
+      "风险分析",
+      "AI应用",
+      "团队管理",
+      "客户服务",
+      "数据分析"
+    ],
+    "email": "100469004@qq.com",
+    "phone": "18180309010",
+    "wechat": "xunijiayuan",
+    "location": "中国",
+    "avatarBase64": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAGQAZADASIAAhEBAxEB/8QAHQABAAEEAwEAAAAAAAAAAAAAAAECBAUHAwYICf/EAEYQAAEDAwIDBgQDBgQDBgcAAAEAAgMEBRESIQYxQQcTIlFhcQiBkaEUMrEVI0JSwdEzYnKSJEPwNIKywuHxFhclJqKjs//EABoBAQEBAQEBAQAAAAAAAAAAAAABAgMEBQb/xAApEQEAAgICAgIBBAIDAQAAAAAAAQIDESExBBITQSIFMlFhFKEjM3HB/9oADAMBAAIRAxEAPwD0thSFOFIGV6mAJhTpKqGwQUYVWlVIiCIFKLEITCqUIaEREURFIGUEIpwUIwghERQERFQREQERMoJxgKlTlQiAREUEjkgTZQqCIiAiIgIiImhERDQiIhoREQ0IiIaERERDuSoXIqDzUWFKKSEwqphVNGFOkKUQREAQ0KcJhEWIEUqQEVSpUjClBThThSmVE2YQDCBSqIQoVKgoPNQq8BUkKqhFIQoIREQFB5qVBRJEREBERAREQEREBERAREQEREBETZBOEwiIujCgqUwhpCKcKEQUO5KUO6iKEQjCKqrUhQpQiBFKloRUJhVqENoA80GVUiibQFKKFRCIiyGUyiIJUqEVEqCiIIPJUqpypRREPJQSGjLiAPMqiVBXSeO+0ay8MtfAZWT1Y5RtOdI8zj/orq7e2qhDcCilbpwHuODpz6AojbyLonDvahw1dC2OepNHI84aJhgE+WeX1Xd6eeGoiEsEscrDycxwIKmzTkREVBERAREQEREBERAREQOiIiCUUBSUNiIERREQoIREUZ0YyqSqkTapUhAN1VthFMBAMKApym0SijKZQSoKlQghFOEwsiMKcJhMKhhQVUqTzQEREBERAUHmpXHNI2KN8jyA1oJJ9EgcdZVU9HTvqKqZkMTBlz3nAA915+7Ve1GW6Vstu4dqNFPFlrakHZx8x5jKwvbn2gSXi/S2m3zvdQxlsbo8kBxBy53y5LVEd2pzUTyTaYqaFwjaOm+dgm24r/LO3Gpkmqnslm7xxGhznDLnuIznPz+5Vhb6s011bA12o6C8tO+5G439+SwHE/EE/dMiopHxCQNDiOZON9/msEy6TwTHuu9L8YdJzyf+gtb/AJPVs8OnbLJHqa4ZZpa7AGTnfP0+i7FwLxLebXWNjt9dNC8Z/dk5aR0yOS1RQ8R3BsMcVVSNlBfqdlmC/wByuxWbibVWnSxkTH55j8vPr7rPH01ES9a9nvHVNxJC2nqo/wALXtGHM5teQMktP9F3ReSqLiWWkDa+ikaKmOVpGTtq/wDXGPmvRXZnxlb+MrCytpXBs7AGzxZ3Y7+yzS2+Gb107WmE6ItsCKeSgKh1TCFSMqCMKSm6bqhhQpUZQMImUQMKVGVOU4BEymVNqKERRBERAREQchB6KOilQqCImFAQKcJhBKIiAiIgIiICjClEEYTClEEYTGylEFOFr7t84pHC3Z9VzxgmoqgYIh7g5+2VsF3JebPi9uL669WjhuKQtZHF38uHdXkgAj2b90I5ef47v3z3wMZUSTSk4DW6gSc8/NZaycC8TcSSZ/CPZABgZbgA+i3p2H9nlspqJt2rKNjnNGIWuGd/MrbLKKmiIEcLGDyAwvJlz+vT6GHBFu3ne09hlykt7GTTtDh1c5dgtvYRCGiSaVneYw7HIlbyYzbAAAV7TR7LyT5F5l7/AIKRHTS57F4vwhh1QPGPDkEYPTkuOu7FKWUBwDGPaPCWey3t+HyFS+HQN1flv9p60niHk6+9nt7sTZIXsnfTSuAEjBnSc5B9tljOyy/XPgTtJgZWPeylkkEdQNZ0Oa4/m++V6+dTwzAslja5p8wtQdt/AVLUUn7TooGsmZz0hdsWfnl5cuKNcN5NcHNDgQWuGQR1CqwuodkF3kvPAVvlndqnp2fh5TnOSzYH6YXbwvobfMmNSIiKIIiICjKnKjCCeaYUZ2RXYFERQEREBERAREQEREBERByFQpyoVkBzVSgKVAREQEREBETCAiYTCAinCYQQinCjCAiYRBSea8v9rsZr+2e46gP3RhjaOewjavUPmvNvaXA6PtfuTxgAvicNtzmJixedQ64Y3ZtThtjKayU8TBgaByV62TL8ZJWHstQfwMLOZ0hZumiLgHHAPQZXysu5l9rBEVjcr2nGpoCyVIzAHVWFHgEZ+iy0ZbpGnqs4667ay2j6c7ACOSonYMEqY3hoyfqqKqppo2ZklaB7rv6vLE6lakEbjZWHEUEdRaJWyNDhjqrg3CkfMIWSZceW3NV10LpaGSLGCWHC51iYl0yTuHUeyJgpJLtQtaxrBKyVrW9MjH9F39dD7PIzHxFcfDjMLdW/kT/6rvi+pT9r4+SPyERFtgREQEyiYQCoUoggKRzREDChCUQETCICIiAiIgIiIK0UhMIAUoiAiIgIibIA5qUwiAigFSgIiICHkiIIHNFKYQUrTfbDaSO0K0V7WDu6uJsTneb2uP8AQt+i2bxpdJLLw5VV8LNcjAA0epOP7rTsd6uN/wCILVFUVTpoWVHe6JMEs2PI8wPsvPlyxE+r3+L4l71+WOodqqHxUFOXOwHAaWBWVLbeI6nElDWNYHHOJT09Fx8TTSU0hqDE54ZywMrqo4l7QattZ+xaSOibDEXQGaLU6Z3ljOy8Pc6fRx0/HbYdvpuKrTMX1zmVNLzLm8wuzWW6Cqyw7OHT0Ws+zm+dqFXbjW8U0UTqbvWRGFsOiXGPFIOmAcbe67lYIzDxJUQnOkHZZvutohutPaszLsV1lnEWiJ2k9Fg6GxxTzukrayeV7umvYLsN0iLnFrRvjZar494J4q4ieyW33WohdFOT+HE7o4ns6ZAxnzK1G5tpnURTbZb7bS01OG07hkbgkrmtVXLL+4qGeNuwPmFr+x8BXm0Q0Rhv9wE0cWKhj5nSRvd5gOJx5Lv9pppomMdO7XIOZwrMztztWPXe1jY6cUXEN3c5uGZaGkcsHf8AquxsLXtDmuBaRkELA8R07a2WagfIWxTx5eAcFxxhXnClMaOxwUxcSI8taT5Z2Xqw5Zm3q8efxqxh+TfLJ4TClF63zkYRSmEFKKcKEBFKhAREQMJhEQFClQUBERAREQEREHIFKpVSAiIgIiDmgKcIiAiIgYwiIgIiICIiAiIgwXH0H4jhSvYGai1gcB7H+2Vo7hyZsfHdFTxgDERJ/wBq9E1cLamllp3jLZGFh9iF58hs0lJx1FWvkdHLTzS0rmHYSANJDh9l4fJr+cWfd/TM1fgvjltVlNT1EALw1xKpitscUmdAIKxVvq3d6GFx2K7PTO1t3Xkv26451VS54gpnOa3Zo5LGcNu765OnO5J3PzV/fJBBaaiQkZDDj36LF8KSwU7GROlaZObt989VnXMOtdesy7dVEF+ryXO2ISNEgG5CtqmaBzQGPByFyW6ow3unHcdV2jiXmtH4rkRtI3G64nSsY7GN1yTvw079FjaiTxbK2lzrG4RWRCapjlbjU04PssjSta2nYGjbCxlKDKDtsTuc/ZZZgAYBywu/jxu0y4eZf/jiqURF7XzBERATCIggqFPVMIIKAKcIghFKhAQ8kQoIREQEREQRERXIApREBERAwpUb9FKAiIgIiICIiApwoUtQMKFUOSIKUUlQgkLWvaPw/VycQUt2pKSoqGtcDpgYTh3XON1slFzyY4vGpdsOacVtw1FI51PV53G67RZ6wSRtGd1ieNaM092kIbhjzqb81bWeq7ogE7L5eSPW2n28NovWJhmOO4qqs4fmpqJ2J3btPTI3WrrZw3xlLxE25RVczJBHoNP3n7o+uPNbLrbnBG0d5K0Z9Vw2niqwU9w7uWsYDjG24B91j7eqtrRXUQsjwnxJcJ7fdXX2ennpyR+HY/ETv9Q6lbAipX01LEDJrkaPG7+YrDycU2OiAZLWx4LtQdnbdXv7ZopWNMdQx7ZPykOzkLpGoefJ8k9xwvZZSW4VhO/JVRk1jwnZcErgDgblTczPDFvxhlLZTy6Gy99+7dvo0/1WRwqKdndwMZ/K0Bci+pjpFYfDy5JvblSiFF0cxERAREQEREBAiIChSmEFKc1JChBCIiAiIiCIiK5UREBETCCRyRRlMoJRRlSEBERAREQFOVCIJyoREBERAREQdf44t7am3GpaPHDz9Wla1pp+5qTDJtnqtx3KPvrfURfzRkfZaSvOHPc9mz2HBXg8un3D6vgX+nBxdZKe6RtkdU1MQAxmKUs/RYSz9nPC9dMe+qrlBUjOHtq37j6rsVvldUs0OfsfNXkXC0lW8OgrXQtJ3LTuF46ZPXt9umSKrem7NeFI26q5tXXys2jE9Q5wPqd8LO0PCNggi101EIHx7sLJH+H23V3QcJUkLQ59xrZ3gb65NlkX07ootIf4W7K5Mm40xfL7x2Q1ghiEZcSR5q4tTxVXGJm+NWSut11U3WGB24PMLsXCMbvxjHuG+CVcM/lDxeT+yZh3BQVKgr7L8+jfqikqEBERATCKcFBGEwpUoIwoKlQgIiICjYKScKgnJQEREQREQgRERXIFKgKUBERATCJlAwpA3UZUoCIiAiIgIiICIiAiIgIoymUBxAaSeQG60JxS8w3acwuywvJ9CCtxOvMVZdau10je8bSx/wDEy52a935WDzOMk+W3mtN36mljqp6OUETU7y3OPzM/hP029wV4PNniNPpfp/7p2xkVS6N+uN2k+XRZa38RVNMB1HLmsK6HUMacHquJ9PMNmuI9l8/2iPp9j031Lu9HxZI93jBA9FVcOI5JmlkQxnqun0VFXzPAa52M9F3fhfhsNc2WfJPPdWLb6hmaevMyq4dtc08gqKhpDTuB/Vd7sNORXxxtAGQcfRcVPTNiYGtAAAwsnY6dzrgyQZDY/ET5LtiifaHl8i0TSV8ee6jK61R8TZ7Q7pwrWuYJWMbU0jsY1xuGS33Bz8vZdkX2HwRERARECAFUoIUoCIiCDyUKSoQFBUqknKCCiIgIiICIiAiIg5ApVKZQVIoypQEREAc1KhMoJRAiAiIgImQoPUoJU7eaxlffLNQZFbdaKmI3Ilna39SuocQdrvBtqjPcVj7lLjIZTN2+bjgfqrobBKhecOIu3u9yh7bXSUlA3JAe4d4/77Z+S1txH2h8TXrW24XqtnY7nGZS2P8A2Nw37LUUmR6y4i494SsDT+0b3SNeNu7jf3j/AGw3O60v2k9uNRcWyUHColoqINPeVjxiV/mGj+EevP2WiJ6iaap1PeS47blXFRpEDYGndw3V+Met+wKiczsvt9XIdc9e6SplkJyXFziASeuwCvO0DhaW4Qi5UDM1sA3YP+azqPfyXB8MlY25djVoAcCaYyU59NLzj7ELZbYQDuvLkpFtxLrjyTjmJh58ipDKMhgz125K7pbO97hlv2W0eJ+Eo5JH3S3x6XneaIDZ3qPVYajowMaRv7L5WTFNJ0+9h8mMldwx9lszY9JLfsu00tMGNGBy9FFNCQMLN262yTYdICxn3K1jxzPTlmzRXmZW9DQyVUga0YaPzO6BZ1kMcEQhibhg5nqVcRsbDGI4mhrR5LEcYXJtp4auNxccCnp3v+YBwvfixRV8rNntkn+nmPtR4mMnbLXXG2VBb+FcyFkrDyLBvj55W4+zrj62cS0EUNRPHT3Ro0yQuOO8Pm3zz5LysZppKySpkdqdM8ucSOZJzlUi4Pp6rAcW7gHBXtmvDzPcGEIXmThntS4qszY4XVouFO0f4dV4yB6O/N91tXhbtc4fujY4rmH2yodtl+8RP+rp81JrobFUjkuOmngqYWzU80c0btw5jgQfmFWVnQEqpUqcoJUJsoQDzRFBQCVSiICIiJIiIgIiIoiIgrREQThSqQpCCUREBERBIRQgKCUKjKZQdM7XOM28GcNGri7t1bMSynY7cbDd2OoG3zIXmS99qHF11zFVXupEeT4GO0fXC7V8TV9Fy4tloo5P3VCwU48tR3d+oHyWkJX/APFzjOcTPA9srtWkaJlnZ7zNKSZJXPc7fJOSsfJXyvBycb+asC/mcnPIIXksH6rcRpNueSdzgSCclcWkyNLSCcriLt/L2XJRyEzyM1Z5bKqmlgqKYvJnLmYy1rty0+6v6XU52txJwCSVazncAHYkbZWTs1M6tqG00Zw6Z7YWk8suIH9VnfI9T/C619msMfD1Q1zHVNKyvjDtt3AFw98EH5FbqLQOey1dcqE8P8TWmtpGOcyma2ItHNzQ3Tj6K64+kvt9ts8Mcb6S2SRua9oPjeCCPF/ZeSebOmuF9fe1Phq3z1FDbZH3m4wg4pqUjLiObQTsT6DJ8lq629udBUXGc3fhaamy8hraaUZH+oOxv9Fpy0cU9xXPtPEzZKqKB5ibVAZqIMHAId/G0Y/KfkQu51dvpr3okrqiOV87cUl4h3bKRyEw5+5PiHXK9MePSk6zV3E/bdN5a78a35R3E/8AxuHhPtW4aud7jo2W2sjheNpn4c5rvVrcnSPP+m63BC+KWFkkTmvje0Oa5pyHA8iCvEdHbLy3imk4eteuO8vqGta5p3i3zryOgG+V6C4EuN54JuZsPEEjprdUSudBIB4KbJyGN/ydMdFnyfGphmPj6lxx5b5d+/cNt6R0C1P8Tl5Zbez91AyZrKivlbGGZ3LBu4/oPmtrOlYIw8HIP5cdV5j+Kq7OquMKCzNeC2lpw+QD+d5zj6Bv1K444/KFlp6Z3ha0cgFg678W6tcIacyDbD3Ow3+6zVTkuI32258lbxkGXBAO2MZ6L1yxtc0sr208bZnAyhviwdldslOkZOfsscwhx8Jy0HGfNSZM7DIKmmdu28O8XXiySh9vuE0BH8Adlp9wdltPhvtnfpay+0DHjrNTHDvm0/0K8+iUlw3w4c9lewyO2yeak1hfZ65sXGnDN50No7tTiV3KKV3dvz5YPM+y7EvFX4h+kEE4C7Jwp2lcScPPjp6WtMlMDjuZzraB6Z5fJc/TSxL1gi63wBxbR8WWYVUAEVRH4Z4c/lPmPQrsSwqSoUHcogIiICIERBERARERRERBWiIgKQoVSAiIgIiICIiAra51tPbrdUV9XII4KeN0kjj0AGVcErUvxLX99BwxT2aF7mvr3l0mOsben1IVgeb+PbmbheKiskcS6pqXSn0yc4XT6lzm3GqZtvM7n7rKXmXNQ0kg7rDV5DbtUdPHkfTK9FemLOXOAM8/6o92AAFxaxqzsj3aj7+iqRG3JnfB8lXQECplHmR+i4w0ad98D6qikeW1zwRgOYOvuppva+Li6TGN13fsoo2VfGdigduH3KHI8w14J/RdHY8a8lbU+HqmFT2jWBjgCGTPl/2tJUt0sPYM1HBNVwGVgeWnO4Vzd4GzUEkQaMOaRhTGM148g1c9Y5rIXOOwAXk+3Tbxdxl2eVf7fvd0fUwUlDFIdLpM65ZTkiNoHM9c9BusZwZeLhw/Vy0stG6oo5W/voNQcyQcsgcw8cwQuw9pHEk1/wCJbnWROLaWKV0dO0cg0HGfc81ecIWkUrpOIquHvcsMdvhI/wASXI8ZHVrfu7Hqvuf9eDeXl4cftl8iIwxqW7ux3gqGi7rim4tM1wnp+6hc8YLItTi3I89JA+S2DcLbSXGOSGqhbI1wIORyVvwjI+bhi3SySd4807A85z4gMH75WUYOZ818ObTL6F9+0z9sdZLfLbKFtPNVvqGw57ov/hb0HqvHPaZeP272lXu4hxfE2odGw+jPCP0XrXtMvbOHeBLxd3OAfBTO7rPWQjSwf7iF4mpQRTl793vJc73XTFXfLlblTKSA52SBlWjOTiHZLzgegV1P+QAk5J81ww7SEjLtJ0n18yvRDCshoGB0GypyTzAwqpHO1YG/uoLcEEqsqDty+a5oSSuLffGylhLdsZ8yoOSrlLIcMc3W46WjO+SsZcJxHUtjD/yHAXI+cSXGGEZ/dgyO3+QH6q1lERqi6XkTufJFhuH4euIvwvF1LC+QtirGmnkBOxcfyffb5r02V447OJ6a28RW2tD+8ihq4pnD0a8H+i9jnGdlxv22KDnopRYBERGRERFgRERRERAREQVoiICkFQiCpFATKCUUZQIJREQQvJ3b9xIb1xxWiGTVTUX/AAsO+3h/Mfm7PywvTfGdyNn4UulzbnVT0z3tx/Njb7rxJc5nTVD3Pfqc8kn3W6V2OuXOTMwPTO5VnXYfdnkkeJrXE+Wy5rm/Q9wHPy8laVp/+sN8nwMcPphdq9MzG05y/Dd8LlaNTt+WVTC0ukIxsOYXOQMbD2VWI0h2xA64XDnFSwj+Uj9FLnDXgFRKMNa4fzbofa4jz3gI5LdnwzNLu0qzhu+I5XH/AGrSNO8HnzW9fhYc0dpNt1DnTTAfRYv0sPW0I/42U+QAWC7Trp+yOC7tXBxa6GlkLcc9Wk4x88LP0/8Aiyn1Wv8At7ZNWcJ/sqnmbCayVrZXu5MiadT3H0wPnkDqvNj17xtqYmY1HbzjwlapK6kfJVMcy2U+H1UoH5vJgP8AM7kPmei7tWXiOgt8V5qo2Nrpou7tlGBhlPGNhJjyHQdTk+9NTJb6KyRVBiMdkoXaaWB2zqybG5I655k9BsuhV1wq7rXPrqybvJXuyTjAAxs0DoANgAvrUpPmZPe37Y/2zktX9Pw/HT99u/6/p6f7Ba59b2Y0HeEmWGSWJ58yHk5+hC783lha4+HeKSPs6i7yNzGvqpXsJH5mnG4+YK2MDuV8zPEVyWiP5Mc7pEtH/Fre2wcPW6wRvHe1k/eyMHPQz+mSvPOnkAQMDzXdu3e+/wDxB2q12iQvpaACmj328P5v/wAsrpDnMc84GfLddaR61hLTuXDVO0t1OcC4ch5lUgFrQNROcHH6rgkk76r0DHdx88eZ/suV5AcWgBbhJS3AyAeSHYnU44I5qnLMY3BHqjHEuwBqHTPRVE7FmSdvPHJcNVKIYS449QuV+Q0np5eaw3EFWI4cnY+qI4rPM6etrKg8h4W/JTU+JxIPNRw8zTaA9/ORxOVzS42xzQXvD8j4Klrg5wA+y9mdmXEUfEvCVNWh+qeMCGf/AFgDf5jB+a8TQTd3IHNOw5r0T8MNzH4q4W/vS5k8LZWN6amnB+zvsud4br03siIuIIiIgiIjQiIgIiICIiCoKVClAREQEREBERACklQpwg1h8SPEMVp4E/ZoePxVylEbW53DG+JzvsB/3l5Rnm0h8hA2HVbt+K90sXE1tnnePwwo8RNz/FrOdvotD1Dw+FxHU5IK6VhJYGsl76dzsbkrineBc6POd4dH0KuNDZJdO+c/RWl5Hc3OhGckArqkSyTHBmonqVQ9+PchC7J9DyVDvIkZRLcjT55GVU7eI43IGVxvOBzwqmu8WkHorpmI1LkiPLmt5/CzIGdo9rLgDqgmYPotEQO2aSRkc9luf4ZatsXaRZi8gB8kkYz5lhwFyvHEun29nUv8Z/zLV/bpLG+egp6uo/D25jXT1kg56BjDQOridgPNbRpf8Nx/zH9V54+KKvkdxPb7e2RwijpTK9mdi4uwCfoVjxsPzZIrLVs84I947as4svT7vdGlsfc0sTe7poAdo2eXuc5JWa4HsEdVqul01R2unPjI/NO/pG31PU9AsRwtZJL3dtLn9zSU7e9qZyMiNn9zyA6krYtVWUFDb4rjVwd3b6cGK2UAdvKR/E7zGd3HqTj2+x5Wf4ojBijmXn8Px/mmfJzz+Md/23R2UyVEvCYnqIu57yZxijAwGR4AaAOgwFluMrtHYuE7ld5XBopqdzxk9cbD64XV+wuuqbjwQ+tq5DLNLWylzsYH8Ow8h6LpnxacRupOHqDhinlAlr5e9naD/wApnIfN2PovizSYv6y9Vslb/lWNRLzyJXzyzVU/jlnkL3F3MknJVpX1Ap4TpALjs33XNIcNaxwGzehWHkm/EXR0TckQtyMjYk5/svRDj9ryiYI4t86sZOd8lS6TD8as9ArqiipJdDaio7snyYTj5rIx2uzOIeaoyHr+8HP2AyqrCchh+cdMkZTvWg5c4AEdfNZOp/ZtO9w7uNu/hLzq+xyrCa4QNJ/DARYH5sD7DkiLaedukbnYHGV0/iCrM84jB5uWcuNa573yvlLtLS7fr0XUKRzp7owyu2DtlremZd3i/dW+CEDfSNvkj2nDdt+eFzOiBDXHGMbY3Vb2NDs7HHPdRXFDANRc7I9Fsf4fLg6h4/o4nSaWPeWEA7eIYXQWM1ZIBB5LKcD3A2ziylqwdIilY8u9iFm3TVeJe3ApXHBI2WFsrCHNeA4EdQVyLgoiIoQIiIoiIgIiICIiCoKVCAoJRRlSgIiICIoOUE5UjkqPmsLx3cDa+DbvXtI1xUkhZk48RGB9yFYHkjt04kl4q49rahjyaSneYKYdC1pxn5nJXT6qNsFIXOOMjA2V3M1slxZENw05dhYjiirL5RDGdm7bFdawksbRse6p1N3ysZxFNm90zs4IPJZa3hzQ6UuI0BdVvdTquPeZ/K7nhdJZh2cbtac5+SPZyOB7lcdHJ30DMHYgKuZwdKG8/ZGulE4GBnl6KiMYfqLiAVE50/xYXGx+TgnrtlXbnMzvlctIErm8zzHsti9i1W2n41sUkjyxrblBl3kDIAtamQ/iRgDxN/Rdn4UqX07+/iPjie2Vp8iCD/RZtzDcPorQOBpg/oST915s7daapvna3Jb6Joe9tJExxJw2MDU4lx6AA5JXomw1Daqw0VU3GmanZIMb/maD/VaI46fDPxXf4qVzaeOaQPuddIdmRsa1ugH+Xblzc448lx8fLOK/tHbvXxv8idTOojv/AMYKjNvore9jC8WGgI76QDS6tnxyHqd8eTcldOvt4q7zcTVVOlgA0RRMGGRMHJrR5BYy9cSi7XcU9Gww22kBZSwk9Orj/mdzP06LP8I2CS9VLpagmnt1ONdVOf4W/wArfNx5Af2X2fHwxgpObL3Lw+X5M+XeuDBH4xxEfz/b0F8PTSzs4p3OBAfUyuHsDj+i8/8AxAXs33tWrtL9cFvApoxnIyB4vuT9F6Isl5o+H+yN93jpmU1NR0sr4oc4yAXaQT5nbfqSvHEU09ZVTV9S8yT1EjpHuPMucck/Ur5EWjJebvTOOccek9w47jOIqfvXfm5Af2WMommOZzntcHloB98n+6iulM9eIW5cIjk+6uoQ3TjGHrqw53EGMjIA9SrZ7i4uGRjOeSrfkAaXbDmOatp3eDxDfOcoInLcjVqJzvjz81xB7NJJ3x5rikc/Vn6rieSYjpwEglirpUgMc1gA1Hf1WHoHP/HFwPJ4x9Vd3bYuIxtzVrw85r6vJy7U/kp2zMO/Rznu4Yy/DguaFhe5u22NydlaCNglByMAc8q6GdXhcMNGwHJVV5GGg41AdAFTCSy6RuAPrkK0Dy2Y5ackbhXFU7/iYH/5gor2N2TXlt64Ft0xk1zQxiCbffU3b7jBXawcnktH/C7VSytvEIl1Qt0ODSf4suyfsFvALz27alKIiiiIiAiIgIiICIiCUREBVKlSEEomVGUEqCUyoQFrn4irk2g7NaphODUysjG/rk/otjLzh8Wl9dU3eg4dheDHSw9/MBz1vJwD7NAP/eVgaRo3576rJyMEDK6zUvEtY4knAOSuzXaZlBaRCPzvbyXV6YOLg4/mJyu9GLLmdxhoD0c5dKuOe9dsCAfddrvkpZC1rRk4zzXUriS94JwM9FbM/bN2CqLqYMPMBZEH98x7iBvv6rrlklMcoByAuxacsDuuealenSOVFQ/Lzz3XGCQ7OOXRVSAkHG+FSzOs+X6LTnbsklxLA49HYPzXYuG5QKvSSACOS6xcGB1OSNiN1l7DPqmhkB2OOajURp9AuxevZW9lNjnDtRjpBE7PQsy3+i83drPE0c01wtlvL2UbquWSZzvzVEpe45P+UcmjyGeZW4Phru3fdlFZA97c0E8rfZpAcP1Xme6wVV1uzLdQxOnqKiTDGt5kk/b38l3/AE/FWb2tb6cPMyXikUr9q+z6wVl84gEEBDIGM72omd+WKMEZcf8ArckBbrc+309ojqJBJTcPUbtMEP8AzKuQDfPm53Mnk0H2WC4NgoLda6m2xy93aKLS641cY/7XMB+Vp69Q0e5K69xTfZrtU965ohpIGllNA0+GFnl6nqT1OV2n287Jrqkf7emkV/SsO+8lv9O79s/GLpexSzULXRxVF3kJMUewbExx2A8vyhaKlmFJbXSE7AZVfEXEE/EFdb4WE/hrfRtpohnkclzj83E/QLB3Sc1NaKVoPdQ4148/JeO1YraYhmtptXcuW0tJhMj/APEkJcT7q+boGWjY5wea4adoY1rwdgFO7twDjoCgmSYgYBxzyrKWXI8X1XPIMggjOQrZ4HyCCW6S0kY9sqwuFS1owDgnoqqybuWnBxldduFQXv0gk58lekWlzmMrngHTtuo4ak0VUfQ6lTNG4Me/xYIVNmljp6uN0n5Qd1mJ1Kb3DYUr2iEO25KyiqiDuSAPXqlHUUksmGPDmEA81zzUsRaC14BJWlc1PVPlbq2wOpV8ZmFzHkHQ05d6j0VlQ0D3jw426lV3Gojo6Xu8tBO5Kg2LwlfKXh1zK+zXOWGVxy5w/Qjy9CvTPZxxRTcW8MxXOF7DK1xiqGt/heOfyIIPzXgmjnrKuQMpQWx53eR+i9CfCY6poeJ7jQumLoamlD3tPRzSMH7lcrV1y6PSyIi5AiIgIiICIiAiIgZTKIgnKZUIgnKKEQSh5KEQSD5rxr2pVTrt2k3qrkfrYKtzQT0a3wgfQL2LUTMgp5JpSGsjaXOJ6ADK8J9ol1iZWVgpHFz6md73O9C4kBbryOrXypbV17y0+FhwN1wwAN1aScFcLIXDBJGeqrcS3cjfphd4jTlM7WV7APiJIaAMbrrc+XyHr5LP3YiSB539FjIY2ue0BuCVm3Mp7cuy03At8HAL+NnUxjtcdWylD3bGRxGctHUA7Z8z6K3pHExBh5ZHNeurpw6X/CIy3VDWd7BaWVTM/wALgdf1wT9V5CjBaAQpVrpzyMwHcsK3ccPxqV24AR6vplWjhv781tmZHNbJG7Ox6Ljskzmfu3HHdOxz6KsDyyrJru5ugJJDZBg+6krE8vT/AMO/EgprZxTZtYH4y0PqYN9zJGNJaPUh2f8AurEUdrns0RtcLmft6uZrrpy7w2+m05c0nodO7z0Hh55C11wPd6211lJXW54bUwy6BtnwvaWEfRy7B2nX9ltpqiw0NS2orap2u7VTXZy7ORC09Wjm7zPstY63vM0r9vRWcWKvzX5mOo/tcScSR3KuNvtrniz0Y0wNIx3rv4pXD+Y+vIYC5rjS1c1mrZKSLUKendNLIdmsaOpP2HmSAur9l1tq7xdm0VGzVI/cknDWN6ucegAC7Z2vXikobbR8GWCQmmJEtZOdnVTx/EfJufyt6czuvqZPIp4uOMdeZfNxYMvmWtlv1H21rTy/s+gdUFoLnbMaepVVDA6Ng1nU93jk91ayyd9Wjw4p4fC31PUrLQgay/GATz5r5U88vbrjhzt2jHMKp2+HeFvpsUD/AA40k+uOq45ZBklhPlk+SIocWgacjJ5gbKxqZHNBG7QOfquQuL3ZzjKsq14GQSMuPNWBirrUh8mkDl5lYlxdqyrqcF7y7nk81byMOdt8HmpLmkP1N7sg7hY5rXGRzCMEFZCONzpWhhPPou28WcBVtq7P7HxkGu7i5VE0LvIaThp+eH/RRqrqdJEWkEPIPos0ypeyPS0k+ZPRYii2dpc4HCy7G9zpzH3tQ7/DhH6lU5X9FWPt1OauqmfpeMMYebz0wFXbLdPdpTX3N5ZBnLYs8/dW1JQTzVgkq399P138MY8gF2aRgjhDG5axoTbTikmij0xU7GtDdm6egW4/hjzFxw4SybzUjw3PXGCtI5Ekx0kY6LvnY9fZbTxraXTOLGNqWtcf8rjg/YrN+moey0TCLzqIiICIiAiIgIiICIiAiIgIiICIgQaw+JHiYWHgCSkilLKi4v7oY5iMbv8ArsPYleOK+UV9ZgSNYeYLupW3vi84gmm46/ZUZy2jp2MxzwXDUT9wtAviuEhL9LiOhxsutI0kslV2y6huqOoic0josZLNX0zu6qWnA5kbq8ttZdad7WSgvjJwWlcd1rKVlU6MS6idjnzXXcOK3kmbNTua12fMYXcuxLgCu464uoqKCJxpInh1ZNjwxRg5JJ8zyA9V0rEDW5je06/4Qeq9BfBVdKmj4xrLRkmmraVznN8ns3B+mR81iZ44WI3L0b2nUEP/AMp7/b4GBsUNplEbfIMjJH/hC8AxMy44HmvpPV08FXSTUtRGJIZo3RyMPJzXDBH0K+c3ENvlsvENdbJSDJR1MkDyORLXFp/RZxy3eNLRmdIB91RIN8rkiw/V6H7LjmGV1YcUrS0Hz81Y3ONzodbB4m7q8e4b7/VVNjEsRBAOfTKiL/hWq/EU5bk+NpaRnr/7rgjjlmnNOBJJLr0AcyT0Cxlgndb7sYHHDS7IytlcKGitd3qroAZrm5oFtiDMhsjucvLBLRyHnjyXXBm+LcymXx58j1rDYXAltjs1vfw5SuhirZIu8vVa4/4LANRi1Dk1v8Xm7Zar4vr6S6cUVs9p7w0z3d1TGQ+LQ0YLz5ZOTjplZ3jfiH9h2aThWglb+InOu71OrLpJOfdZ/lb183Z8gum2xummEzmkPl/IMch0yuc1tM+9u5e7Jnr6/Dj/AGx/uXMIGNOhseGtGPmryAfu2nAOBnJ9VxuiDWNYRlxG+eS5AeeQ3JPVHBXJq6ajjngrikcdIyM9M9FLjglpwDnqVbVVQ2IYI3OwHUIwonkbEHNacHOQVip5NTju4uwScrkqJtQ/NnzWOdL4ZJS/APhHyV6SZcco257ZyrcHJwOpVDpCQd1VShzpA1oznks7Z2zfC9vmrbvTUlNG6SWeQRxsAyXOJwF7P7ReBqaH4c6vhZkLZ5LZbRLG7G5mj8bnj1cdX+4haS+FDhaSv7RYrpLSd7S26J0rnuHhY8jDPnk5+S9gVUUU9NLFO0OiewteDyII3XO886dKw+aVpdSQXVsdU/cO3yV2wxU7HF1OWh0m5eOeF0/tDgoabjK7Q2sudRR1cjacnnpDiB+ixtHcLjJKyGCQl2NhldOiOWy6UQU7cNHM5cepVnfqmoAEVJFryMly69Sw8SzYBliYDzLgsxFQXWCLvJbiHADdrIcn5ZKQrGwz1sbgZYntwd9l2W2VvfxNl5SxOB9cLCVlylgAZNPV0/k98LHtJ9lfWesgOXVFwpqjXtmOLQ8e/RVYl7w4FuhvPB1qubnh76imY55Bzl2MO+4KzS1R8M1yZNwS+0uq2TyUkpcwDmI3bjb3ytrrzSoiIoCIiAiIgIcKQod1VBERQEREBERE2IiBDbyP8TVHR0faVca+qifI+aOJ8bOQd4A3+i0hcrrWzHDIGxsGzWgYwvQ/xfN/+56NwaC4Ugx/uK88Sk4zJGRnoutehjW1Nxkk1RwF4Zuea4nyUVS3E1PJE7rtkfXmu2U9PTT0jWxu09SwcyuCqpoGNGhoGPMLpES5/Tr9La2TOAp5Wtd/CHuO/wA1vv4PLZVU/ac99SNLWW+VzfFnfLR+hK0jWVEMZDIAC8HJIXp74NIIa39r3l+DURMZTt9A7c/oFm8agrG5ekRjqvAvbnRfgO1riSnO+a6SX/edf/mXvheF/iOcHdsvERwAROwf/rasY+279NdxS924h3kq34cC7UreYZPvsuJkz2nfl0K7ObnONwBjKrpwdOMkey42lrxkLmpyQ/A2Hsgxl5pyyVszD4huCu4cPX+aht8N6pGxvq6djmRucM904jGsDzGcj1XBauHa7iS7U1ptkYmq6p+iNhOB758lc3jgXijga6S2riO2SwU1WMRTN8UTnY6OG2fTmse8ROnaKWmu4depo5a+qOsudrd4jzJ6krsbiInAEFwaNIaT0WJsbJooHA+FxeWuz6bLKMYRl3NxH5it2v7W2zSnpXStpcXDYcvouUbx75x5FcTcNDRzcTuVVJMGxlzuQCm2lEsjYsF4IwPT6rB1lU6QuOMAciuSuqhPJnV4RyCxdQHYOlxDfNVNOGsqC5ulpLWgYVrO8gNjLsBoBx6rkeQXBgGoZ3KtJhrcTnG6m2JhQ5waAR0WT4dex1a3WfqsODsRg4WRs8FQKhkjIXkZ8k+yY29lfCVV08FNd7OARNJoqmnoWjwn7ub9VuHiniKwWChfNfbpTUURYdpH4c4dcDmfkvHfZl2gVXAzLnUUNN+JuMtJ+GgLxmOMlzSXO88adgun3a83i/3eStvddU1tTK7L5JDv7DoB6DYLHpMzyvtpjeMqK0zcU3WazPqH259S91KZ4/FoJ2yrOht7BK2OSORpOBjUcFdhpaB5eME7nbKzMVBEI9MjWEjk48/qunDMR9sXQ2ynidh0b487Ah5Bz75VzV0zqdmuKaXR5k6x88q7kkgDBGS9rxycVYz3B7B3FQWvYeTwEVjKupY9gjrWAB2zZG+KN3z6H3WJqbVJRv76my6Pngb7LI1MckMjqikcHZ/PGRlrx6hXtoqI6yN0PciMtGQzoB1CnTf03l8HEM9TdbpcC491BSCB2T/E97SP/wCZXpZef/g6pTT0nEpxhpmgA+j/AO69ALjftRERYBERAREQEJCnOyocqKkRUeLUoitFA5bqUEbqUREEREHnT4vqDRWWW5gbSRyQn3aQf6rzXXtLnkk7A8l7K+KC0i4dmclc0N7y3VEcoJ56XHQQPm5p+S8cV0oZMNbQ5oXSs6UtrdDi5uSQNh5qwuUdwqpCZH90wnZrfJZCEQPbtlnlgq5ldHFRyPBMha38vMldmJhgILWxoOojbcnO5Xrj4NrBUW/hW5XiRjo4K6ZrIQTs/RkFw+Zx8l5HgdX1U5Bp5ACOWF7K+Ea8VtX2dy2itYGi1z6IfPQ/L9/mT9VzyTwU7boXgvt8qBUdsXEbxg4qyz/aAP6L3nlfPPtOqmXHtD4gr6Z/eQzXGd8b87FpecH6YUxtXl11/Pz6rimbnkBuuYg7Ec1xvaV0c1oe+iGWgOHkrugrYy5rZdgqHZaD5+y4XwseNQGHeYU6I19u18PcTv4V4lt17pXazTShxbn8zeRH0JC9mcMcXcPcd8MxVET6etpp2gPjlaHFh6tIPX3Xg+1WW73qrbQ2yhqbhUO/LHDGXH7LtlitPaxwJXCegsd5pRJ+Zn4Z0kcnuBkZ+68WekTzE8vqeHf1jUxuHp7iTsa4OvUpmomSWmYknNMRpJ/0nb6YXT7r8PNUSf2bxLE9hGzaiAtI+bSf0V52Z3vta4gEZuHDkdugAGampeYs+zD4j9Meq3Ta6Wsjib+LqGySddLcBeSM2SnG30b+PhtG4eSuN+y/i/hKndU1dMy4UbW5NRSEvDf9QIBHvjC1vUzzTSY0PDc8sbL6DVLNTSMArxLxPbO4v9yp9BDY6qVoGOQDzj7L2+LnnJMxL53k+PGOPaHTnNc5wBZjV9FYVRnmqG08bRqJwBhdpkoM/l5c99lXTW2n199JAHSsyWuHNe3bwOpS26rpu9d4Xd2DqDd8Kwgoqqoy5jcDzK7lSxvmpbixpw5xGk9c/wDQU2SmgqKckNDJRs4Z6qaZmOXWKe11Ebg4xBxB5DcLsFQ2odTRyd2WPYPygc1maekcHAEDY80uNZTQvbDUMzHyEmdwqLOigiFM2obKWifo47Z6rJ00bSQwt8Y81bUlHFNG+GORstI86uYy0qzFXU2qp/DyyF8WfATvhEZp0xpXO72HVnqDyXFWVrcZieXbLHy3yOXMczO7dy35FWU7i2QOjOWnOwRYheS1RccPccZXA8agcOJB+a44nsfkO2J81SRLCcjJZ5LPtDWnJE1zHY5t9VeUIY2sZKxul3L3VvB++AIPPbC2R2Sdl164uuUVTLDLSWdjszVL241gc2szzP2CTrXKt9/DjZTbOARWyM0y3GYzHbBLR4W/oVsxcFvpKegoYKGkibFTwRtjjY0bNaBgBc64TIIiKAiIgIiICpcOqqVJPRUVIqWFVKIIiIgiKnJ8kVUioJOOe6pQ06p2zUorOy7iGH+WjdL/ALCH/wDlXhG5Ya4kDbOV9DrzRsuNorKCRocypgfE4HqHNI/qvn7xPSGjrqikc0GSGV0b/cHC6UlVrbjE/AeN8+a5aiDDXaSW+oVjSNxycGq/pJMtIkflnmuzltbxyupW6u9cc9PNew/hVpYWdmr62MDvKqseXu8w1rQB+q8Y1ckrp8MYNHmV6o+DO7umst3sznEiF7J2jOzdWQcfQLGSOFrPLePE1wZaOHLldHnApKWSbn/K0n+i+c8s4fI5+dQJyV7R+Ke/yWXsunpYCBNcpW0wP+Xdzvs1eJi2MO8Qcw/ZZx9F55XWAT4eoVBaTsjYpiwGKVj/AJ4KrY97W6XxlrvIjK6M7cD2E7YwuIsC5XyyE4I2PVccwzEckg4RHpj4cauy03AzZKMwNre9d+KI/PnOwPXGFt21XmCeo7uYsweR5LSnYDYOG38CQVckDBWVGsSztOmQYds0OG4Gw2W0rPw1SU0AbTTzytD9TXTSF5HoCd8L4Wafzl+o8WK/HG3emhpbmMgj0KoJkB57Kxgc+CMMc4e+VyCoYB4nfdcpnh09V812W4JXlvtgo/wXHlx1NwydwlZ02I/uCvSz6ljWFwmby8159+IeMR3211wP/a7e1+fZ7h/RevwJ/OXg/UImKQ1tM+NuzgD5YXFDNBoLdRBdtjyVnNIZASXfdWE0rY8hvML7D48yyNNTupIJHSNAJe07+6taNhiu9U1gwCM46ZVVuuLa6MwSvALSrusi0VLJcEAtwfZGVqysmieWF2ok9SreeenqXmGcAOOwyk1P33ia8hzT0KsqiISsO5EgOUldLWoZV2qo7yF5fFnO2+FloLnSXOn7mqIY4geL1VhBU5Bhn3HLdcM9vcJC+nzpO+yM6mGSq6WKYaRhxbsHriZFLGNLgcD7LgpJZoxgh2OoWdtlHW3SoZTUdHNPM/ZrI2FxPyCkxtuGLkpnbSRldk4N4bvfE9wFus9vlq5di4geGMebjyA91t7s17A6+udHX8YPNFSbFtJG4GV/+o8mj7+y9C8P2S1cP25lus9DDR0zP4I24yfMnmT6lc7TH001d2ZdhVisLI67iLTdbjnV3f8AyIj6D+I+p29Ft+GOOGJsUMbY42DDWtGAB5AKtFzmdgiIoCIiAiIgIiICoPNVqDyVFAOFVqCoRBUHKNR6KEUE6nKdSpRBOVBKIRlAC8J9s9ELf2i36B3hY2ukLfUE5H6r3YF5Q+LrhyKj41gu7XtMdypw5zAd2yMw0nHkRp388rdOJGjYpoTKGOcA0jGc8lkWwxPA/et0dA0rBVNG9udJ2UUdNM5wGpxyeWcLszMcMhdp6SgZ3TRqkcM+y3v8EUjjxRe26vC6iaSPZ68+XSSTvGxMi1aAAXu6rcXwk8Y2+xdof7NundwC6Qfh4pRsBJqBaD77j3wpfpis8u5/GxcpWXHh62B/7psUs5b5uJDc/IA/UrzvE5hwHta4eWFs34vr+259rclHE8llspY6bHIat3u/8S1GZSMEckrxBPMr6WnhJ1Rl0fsVDNY8L5O8AyQrMVJwASd1UZSBz6KnquHEOG/muKeIdyXnGcKxfUPBO6h1fJ3enAKJpsT4d668ycVz2aluYhou4fUSQyN1NeQWjA8j4unQFeirNcrnRSNimaZGE4c1rs4HmF4wsd6uNkvdPdrc8RzwuyOocOoPoQvTXZnxxPxLZTdGURpnRyd1KA8PGoAEkdQN18nzcUxPtEPu/puWJj0ntu+GOB8bXvqAARnGVytjpjsx7Xn3WEsdYauma5+gdCc7rIl8MZwBqPmvFD6dq6ntXX07BBI4NH5SVpr4gqZs/BnCV2bjLWTUj8dMPJA/VbZrJnywvYxwAIWnO0qsqZ+B7nZn08stPRVLayOYN8EZJ0uYT6h2R/6r0+JaK5Hg82k2x7/hpaVwAIzuOisamSEEZJ9SuKsqHa/CfCrOWp3y/GF9vb4UxtwTSOp6z8RDlu/LzWbHEEktL3LmNyf4j0XXZqrUC5rBnGfRc9oo7hcp2w26jqKmUNLiyFhccDmcBZmdEVhk/wAScaS7f5qGSnAz57rK27gjiKptj7lLBFSRRv0d3VTNhkef8rXkE8sLBa+7yHbEc1qLRJrS7MLHHV19lf2eirKupjo6KnmqqiQhrIoWF73HyAG64rHRisLnukPdN5gHmvdXZ/wNwxwjQR/sW2sjnfGNdQ/xSu23y7+gws2tppoLgT4fr/dJY6riVzbRSHd0QIdO4ew2b89/ReiuEOEeHuFKBtHZLbFTgDxSkapHnzc47lZ5RhcbWmTQowpRZEIh5ogIiICIiAiIgIiIAKhxGEJwqVoU5RRhSsgiFRgoJRRgpuEAqPmpJUIJyvJPxV3KWv7SKij05joqSOBmMnJI1k++XkfIL1qvHvxR09fSdpldFTSGFlSyOdrurwWAHB9wR8lunY03FBM395VPdGzOGtdsXH+yvBDNgBhwz0CwdZS1/eFz3vc7qSqIpLozDGTkDyXSJZmWfdC4tA3PmXnACwjpfwl8hmhe4mKVrtTTyIOdlzwNq3eCslErS3YFv9RyUR0TW1AhmmZA1wODpOkbE79TnGPmtb3DPq7b2/xzRdptZWyO1Q3KGGtp5M5D2SMBB+uofJdNik1x4BGQrC+1lyq6yN9bUzVLomNijMjidLGjDWjyAHRcMFRIxxcQQFziZ6XiJZORzgc+SpdUOAxlUCZsv5Tknoq226oqHDQ0rTTiMgcDvkrlpoXTvAAO/oryGziLDqqQMHlncq572OOPu4mhkY5eZ91dbTWpWMlJgFo5YPiVxwlxVeuEbg6e2VGI5MCWB4yyQDzHn6riqnl4xyaNtlb2y11d5ukVBRxGSaV2lozgDzJPQAbk9AsWrF41LdLWrO69t22Ttunit89wh4cqXsp2NdUSMqBoaScDmOpPJWlf8RFwqI3NhsrIyTsDOcY9cDmuuXK1U7OFpaGjqRFZLeWiWpLTitrHeXmcZwOjQT1XUJbGyPJxkgrzf41JniHvy+Tnx6iZ5dvu/bhxlVUroaX8LRZH5mMLnfc4XWLt2ncaXaJtFXXh4pHECSnhjbGxwzvnA3ysNWUwgycYWKn2dkDfK3GGKTw8ls17/ul3GQB4991TRMtrLnSm7iU0XeDvRHs4j36Kxm4ho2UsYZA98gaA7pv7rC1N9q5SQAxjegaN/qV39405abJrr/wZZZ46vh2yMnqhqBdUAvhjaRsQ1xPjHnyWJunaLcpPxDbdFTWz8S0CpdQxCJ0xGRkubyGDyGAcZxldAfK+XxvcSSuaFhc0bZys6iWmSrr3cq2cy1FXPLI7m+SQuP1Kilc9x8TnHPmcq0ZEeZCvKcAY2KrEu38GFzS6I7h4z8x/7r6C2CR01it8zvzSUsTz7lgK+fHB8rTVsY44OcL6FWeNsNoo4m40sp2NGD5NAWbqukRFgEREAqBzUnkoHNAREQEREAZREVBERSBBGSqSFVkIXLQ//9k="
+  },
+  "resumes": [
+    {
+      "period": "2008-2013",
+      "title": "互联网公会创始人",
+      "company": "虚拟家园团队",
+      "description": "因游戏产业汇聚的互联网团队，驻扎YY频道：7707，高峰会员数10000+，平均在线1000+，主要运营：2.5-3D游戏，同期1-5款。管理人员100+，成立宣传部、接待部、游戏部、娱乐部、技术部、统战部、后勤部、经营工会网站、论坛、文章、视频；与多家头部游戏公司长期合作（如：腾讯、盛大、新浪、久游等）是歪歪频道的精品顶尖公会。同期对残疾人群体进行扶持，建立《残疾人联盟聚集地》利用公会资源“游戏”“淘宝客/淘宝联盟”，帮扶100余名残疾人通过互联网从家庭拖油瓶成长为家庭顶梁柱，后反哺当地残联，助其部分残疾人成为创业和教学导师",
+      "tags": [
+        "游戏",
+        "公会",
+        "团队"
+      ],
+      "id": 1785340773252,
+      "created": "2026-07-29T15:59:33.252Z",
+      "updated": "2026-07-29T15:59:46.115Z"
+    },
+    {
+      "period": "2011-2022",
+      "title": "生产型企业管理",
+      "company": "威勇电子厂（佛荫电子厂）",
+      "description": "在厂期间，主要负责文职类工作兼工厂监事职务，从广州总部到四川分部。对来料-生产-组装-验收-打包-发货跟单流程程序清晰，参与产品生产，工艺文件编写，设备调试等。",
+      "tags": [
+        "就职",
+        "工作",
+        "生产",
+        "电子厂",
+        "电子元件"
+      ],
+      "id": 1785340871238,
+      "created": "2026-07-29T16:01:11.238Z"
+    },
+    {
+      "period": "2014 - 2015",
+      "title": "实体创业者身份",
+      "company": "速源电动独轮平衡车",
+      "description": "创办线下实体创业，加盟成都速源电动平衡车，落地泸州。获泸州市政府创业扶持，创建当地最早开始的街头拉风潮流及平衡车品牌和本地腾讯大成网达成合作",
+      "tags": [
+        "创业",
+        "实体",
+        "创业经历",
+        "电动独轮车",
+        "平衡车"
+      ],
+      "id": 1785340935246,
+      "created": "2026-07-29T16:02:15.246Z"
+    },
+    {
+      "period": "2014-2015",
+      "title": "智能手表先驱探索者",
+      "company": "早期一人公司创始人",
+      "description": "2014年关注到经常有老人因患老年痴呆症频繁走失，以及孩子走失事件高发，寻找一款设备解决该问题的市场应用及设备，从蓝牙监控设备到佩戴智能手表。联系生成厂商合作开创本地智能手表先河，后因小天才问世，逐渐淘汰市场。",
+      "tags": [
+        "创业",
+        "一人公司",
+        "智能手表",
+        "创业经历"
+      ],
+      "id": 1785341005475,
+      "created": "2026-07-29T16:03:25.475Z"
+    },
+    {
+      "period": "2017 - 至今",
+      "title": "平安保险代理人",
+      "company": "中国平安人寿保险公司",
+      "description": "正式加盟中国平安综合金融，成为平安集团的一份子，主动学习，拓展业务，组建团队，快速成为绩优，积累丰富的销售实战经验，获得卓越优才荣誉。",
+      "tags": [
+        "中国平安",
+        "平安保险",
+        "保险",
+        "综合金融",
+        "全域保险专家"
+      ],
+      "id": 1785341462326,
+      "created": "2026-07-29T16:11:02.326Z"
+    },
+    {
+      "period": "2019起",
+      "title": "保险代理人-导师级",
+      "company": "中国平安人寿保险公司",
+      "description": "从基层代理人做起，快速成长为团队长。学习保险产品基础知识与销售技巧的同时创建新型学习方式和销售方法，建立了更加完善且多元化的客户服务体系。",
+      "tags": [
+        "团队管理",
+        "团队长",
+        "导师",
+        "销售",
+        "保险"
+      ],
+      "id": 1785341575622,
+      "created": "2026-07-29T16:12:55.622Z"
+    },
+    {
+      "period": "2024 - 2025",
+      "title": "中国平安健康团体险会长",
+      "company": "中国平安健康保险公司",
+      "description": "平安健康险泸州会长为团体及个人客户提供中立客观的保险规划建议，服务客户超过500人，保障总额超亿元。专注于个人与企业健康风险保障规划方案设计。",
+      "tags": [
+        "团险",
+        "团体保险",
+        "健康险",
+        "客服服务",
+        "销冠"
+      ],
+      "id": 1785341676358,
+      "created": "2026-07-29T16:14:36.358Z"
+    },
+    {
+      "period": "2025-2026",
+      "title": "任氏宗亲秘书长",
+      "company": "泸州“任”氏宗族",
+      "description": "为泸州任氏宗亲门提供数字化资产管理的信息资料建档、互联网宣传、活动记录与组织、协助宗族举办各类会务活动。促进宗族文化得以延续和发展，血脉传承，文化传递，互帮互助，资源整合对接，公益捐赠，帮扶鼓励，扶贫救助等活动。",
+      "tags": [
+        "宗亲",
+        "任氏宗亲",
+        "泸州任氏宗亲",
+        "任氏家族"
+      ],
+      "id": 1785341735875,
+      "created": "2026-07-29T16:15:35.875Z"
+    },
+    {
+      "period": "2023-至今",
+      "title": "人工智能AI技术实践者",
+      "company": "一人公司创始人（OPC）",
+      "description": "在2022年底接触到人工智能大模型Chat GPT，成为国内首批关注AI大模型领域群体，2023年寻找合伙人创建注册Chat GPT账号淘宝店，被招募对象否定，错失商机。2023-2024竭力传播利用好AI大模型，参与学习和使用大模型及各类AI应用。2025年AI能力大幅提高，国内逐渐追赶技术平权，从Cursor-Trae，AI编程工具使用，已创建上百个自用网站及APP或者Python程序。对AI发展史及大模型变化及领域知识熟悉。从文本对话到视频对话，从数字人到智能体，从自动化工作流到Agent，从AI视频到GEO，成为一名泛AI知识参与者。",
+      "tags": [
+        "人工智能",
+        "AI",
+        "GEO",
+        "保险",
+        "AI编程",
+        "Agent",
+        "自媒体"
+      ],
+      "id": 1785341801637,
+      "created": "2026-07-29T16:16:41.637Z"
+    }
+  ],
+  "honors": [
+    {
+      "id": 1,
+      "title": "团体健康险销冠",
+      "issuer": "中国平安健康保险公司（省机构",
+      "date": "2024-2025年",
+      "icon": "trophy",
+      "description": "全公司西南地区年度团体健康险业务业绩排名第一，荣获泸州支公司分会长荣誉、公司最高销售荣誉奖项。",
+      "color": "from-yellow-400 to-orange-500",
+      "updated": "2026-07-29T16:17:46.325Z"
+    },
+    {
+      "id": 2,
+      "title": "钻石星级导师",
+      "issuer": "中国平安人寿保险公司",
+      "date": "2019年-至今",
+      "icon": "medal",
+      "description": "获得寿险行业钻石星级导师称号，传播保险理念，帮助学员快速认同行业文化，理解产品价值，同时荣获最权威的社保体系拆解专家资格认证。",
+      "color": "from-cyan-400 to-blue-500",
+      "updated": "2026-07-29T16:18:17.078Z"
+    },
+    {
+      "id": 3,
+      "title": "产品专家委员会杰出贡献奖",
+      "issuer": "行业协会",
+      "date": "2020年-2026年",
+      "icon": "award",
+      "description": "多年持续为保险行业发展和推动做出诸多杰出贡献，获行业协会认同表彰。",
+      "color": "from-purple-400 to-pink-500",
+      "updated": "2026-07-29T16:18:53.736Z"
+    },
+    {
+      "id": 4,
+      "title": "AI创新应用奖",
+      "issuer": "AI科创技术联盟",
+      "date": "2023-2026年",
+      "icon": "rocket",
+      "description": "在保险行业率先提倡通过自媒体和应用人工智能AI技术赋能行业服务，推动行业数字化转型的同时运用AI帮助客户获得更好的服务体验。",
+      "color": "from-green-400 to-cyan-500",
+      "updated": "2026-07-29T16:19:28.356Z"
+    },
+    {
+      "id": 5,
+      "title": "客户满意度金星奖",
+      "issuer": "中国平安客户评价中心",
+      "date": "2018-2025年",
+      "icon": "star",
+      "description": "所在区域代理人中连续多年客户满意度评分最高，获金星奖表彰。",
+      "color": "from-red-400 to-pink-500",
+      "updated": "2026-07-29T16:20:43.710Z"
+    },
+    {
+      "id": 6,
+      "title": "卓越优才荣誉",
+      "issuer": "公司总部",
+      "date": "2017年-至今",
+      "icon": "users",
+      "description": "加盟中国平安以来，积极学习，精进业务、开拓创新，组建团队，在团队管理、活动策划、协调安排及个人能力多维度均获得公司高度认可。",
+      "color": "from-indigo-400 to-purple-500",
+      "updated": "2026-07-29T16:21:11.099Z"
+    }
+  ],
+  "cases": [
+    {
+      "id": 1,
+      "title": "方案案例",
+      "category": "示例",
+      "description": "示例案例",
+      "cover": "📝",
+      "tags": [
+        "示例"
+      ],
+      "date": "2024-01"
+    }
+  ],
+  "business": [
+    {
+      "id": 1,
+      "category": "健康医疗",
+      "icon": "🏥",
+      "color": "from-red-400 to-pink-500",
+      "title": "重疾保障配置",
+      "problem": "客户咨询：30岁家庭支柱，担心突发重大疾病影响家庭经济，希望获得全面的重疾保障。",
+      "solution": "根据客户家庭情况，量身配置了保额50万元的终身重疾险，附加医疗报销和住院津贴，缴费期20年。",
+      "value": "为客户家庭提供了50万元重疾保障 + 每年百万医疗报销，有效转移重大疾病风险，守护家庭幸福。",
+      "client": "某企业高管 · 35岁",
+      "date": "2024年"
+    },
+    {
+      "id": 2,
+      "category": "财富传承",
+      "icon": "💎",
+      "color": "from-yellow-400 to-orange-500",
+      "title": "家族资产传承规划",
+      "problem": "高净值客户希望将名下资产以最优化方式传承给下一代，同时考虑税务筹划和资产隔离。",
+      "solution": "设计了包含人寿保险信托、年金保险、境外保险在内的综合传承方案，实现资产隔离与税务优化。",
+      "value": "成功帮助客户实现亿元级资产的代际传承，节省遗产税支出数千万，同时保障了家族企业的稳定运营。",
+      "client": "某集团董事长 · 55岁",
+      "date": "2024年"
+    },
+    {
+      "id": 3,
+      "category": "企业保障",
+      "icon": "🏢",
+      "color": "from-blue-400 to-cyan-500",
+      "title": "企业主风险防火墙",
+      "problem": "中小企业主面临\"无限连带责任\"风险，企业经营风险可能波及家庭资产，急需建立资产隔离机制。",
+      "solution": "通过法人股东架构 + 大额人寿保险 + 家族信托组合方案，为客户建立了完整的企业风险防火墙。",
+      "value": "有效隔离了企业与家庭资产，即使企业遭遇经营风险，家庭核心资产不受影响，为企业持续经营提供了坚实后盾。",
+      "client": "某科技公司创始人 · 42岁",
+      "date": "2024年"
+    },
+    {
+      "id": 4,
+      "category": "教育规划",
+      "icon": "🎓",
+      "color": "from-purple-400 to-indigo-500",
+      "title": "子女教育金储备",
+      "problem": "年轻父母希望为孩子提前储备教育金，覆盖从幼儿园到海外留学的全部费用，同时希望资金灵活可调整。",
+      "solution": "设计了年金保险 + 教育金信托双轨方案，锁定长期稳健收益，同时保持资金使用的灵活性。",
+      "value": "预计可为孩子积累超过200万元教育金，覆盖海外名校留学费用，实现\"教育无忧\"的目标。",
+      "client": "某大学教师 · 32岁",
+      "date": "2023年"
+    },
+    {
+      "id": 5,
+      "category": "退休养老",
+      "icon": "🌴",
+      "color": "from-green-400 to-teal-500",
+      "title": "品质退休生活保障",
+      "problem": "即将退休的客户希望在社保养老金基础上获得额外收入，确保退休后生活品质不下降，能够周游世界。",
+      "solution": "配置了养老年金保险，60岁起每月领取相当于原工资80%的养老金，领取至终身。",
+      "value": "客户退休后每月可额外获得2万元养老金，加上社保退休金，实现了高品质退休生活，现已开始规划退休后环球旅行计划。",
+      "client": "某银行高管 · 58岁",
+      "date": "2023年"
+    },
+    {
+      "id": 6,
+      "category": "保障升级",
+      "icon": "🛡️",
+      "color": "from-cyan-400 to-blue-500",
+      "title": "家庭保单全面复盘",
+      "problem": "客户购买了多份保险但不知道具体保障内容，担心存在保障缺口或重复投保的情况。",
+      "solution": "对客户家庭所有保单进行了全面梳理分析，找出3处保障缺口和2份重复投保，重新规划了保障结构。",
+      "value": "为客户节省了约20%的保费支出，同时保障额度整体提升了40%，实现了\"花更少的钱，获得更好的保障\"。",
+      "client": "某外企经理 · 38岁",
+      "date": "2024年"
+    }
+  ],
+  "tools": [
+    {
+      "id": 1,
+      "name": "保险计算器",
+      "description": "计算不同保险方案的保费、保额和收益",
+      "icon": "calculator",
+      "url": "#",
+      "category": "计算工具",
+      "qrCode": true
+    },
+    {
+      "id": 2,
+      "name": "风险评估问卷",
+      "description": "快速评估您的风险承受能力和保障需求",
+      "icon": "clipboard-check",
+      "url": "#",
+      "category": "评估工具",
+      "qrCode": true
+    },
+    {
+      "id": 3,
+      "name": "保单整理助手",
+      "description": "帮助您整理和分析现有保单的保障情况",
+      "icon": "file-alt",
+      "url": "#",
+      "category": "管理工具",
+      "qrCode": true
+    },
+    {
+      "name": "语料采集系统",
+      "description": "通过个人对麦克风及扬声器的语音录入和音频输出和键盘与鼠标的内容记录，将音频内容转化为文本方式记录，采集用户日常工作、生活、思想上的语料，为后续数字资产和数字人生命做铺垫。",
+      "category": "AI技术·豆包",
+      "url": "www.豆包.com",
+      "icon": "cube",
+      "qrCode": true,
+      "id": 1785345932954,
+      "created": "2026-07-29T17:25:32.954Z"
+    },
+    {
+      "name": "图像处理（凸）",
+      "description": "工具可以快速处理图片中用户想要凸显的（人、物、商品、局部等）方便用户对象目标能直观识别，运用场景（快递站、保安亭、外卖中心等）",
+      "category": "AI便捷工具",
+      "url": "www.deepseek.com",
+      "icon": "cube",
+      "qrCode": true,
+      "id": 1785345991814,
+      "created": "2026-07-29T17:26:31.814Z"
+    },
+    {
+      "name": "客户信息汇总",
+      "description": "客户通过填写自己的相关9页资料后，可以导出Excel发给代理人，用于导入代理人资料库",
+      "category": "客户服务,资料收集,保险,保单检视",
+      "url": "https://lzp5133084.github.io/nine-page-survey/",
+      "icon": "cube",
+      "qrCode": true,
+      "id": 1785346442787,
+      "created": "2026-07-29T17:34:02.787Z"
+    }
+  ],
+  "showcaseImages": [
+    {
+      "id": 1,
+      "category": "荣誉时刻",
+      "title": "年度销售冠军颁奖典礼",
+      "description": "公司年度表彰大会现场",
+      "image": "",
+      "icon": "🏆"
+    },
+    {
+      "id": 2,
+      "category": "荣誉时刻",
+      "title": "MDRT会员证书颁发",
+      "description": "获得全球百万圆桌会议会员资格",
+      "image": "",
+      "icon": "🎖️"
+    },
+    {
+      "id": 3,
+      "category": "客户互动",
+      "title": "与客户签约合影",
+      "description": "为企业主完成保障方案签约",
+      "image": "",
+      "icon": "🤝"
+    },
+    {
+      "id": 4,
+      "category": "客户互动",
+      "title": "团队交流分享会",
+      "description": "与团队成员分享成功经验",
+      "image": "",
+      "icon": "👥"
+    },
+    {
+      "id": 5,
+      "category": "沟通内容",
+      "title": "客户咨询线上答疑",
+      "description": "为客户解答保险相关疑问",
+      "image": "",
+      "icon": "💬"
+    },
+    {
+      "id": 6,
+      "category": "沟通内容",
+      "title": "专业知识培训",
+      "description": "参加行业培训提升专业能力",
+      "image": "",
+      "icon": "📚"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "健康保障方案",
+      "icon": "🛡️",
+      "description": "重疾险、医疗险、意外险一站式配置，为您和家人提供全面健康保障。",
+      "features": [
+        "重疾保障",
+        "百万医疗",
+        "意外保障",
+        "住院津贴"
+      ],
+      "link": "#contact"
+    },
+    {
+      "id": 2,
+      "name": "财富增值规划",
+      "icon": "💹",
+      "description": "年金保险、分红保险等长期稳健增值方案，助您实现财富保值增值目标。",
+      "features": [
+        "长期年金",
+        "分红收益",
+        "灵活领取",
+        "资产隔离"
+      ],
+      "link": "#contact"
+    },
+    {
+      "id": 3,
+      "name": "家族传承计划",
+      "icon": "🏰",
+      "description": "保险信托、境外保险等高端方案，帮助高净值客户实现家族财富代际传承。",
+      "features": [
+        "保险信托",
+        "税务优化",
+        "资产隔离",
+        "代际传承"
+      ],
+      "link": "#contact"
+    },
+    {
+      "id": 4,
+      "name": "企业主保障",
+      "icon": "🏢",
+      "description": "企业主专属保障方案，解决企业与家庭资产隔离问题，提供全方位风险防火墙。",
+      "features": [
+        "股东保障",
+        "资产隔离",
+        "风险管理",
+        "重疾医疗"
+      ],
+      "link": "#contact"
+    }
+  ],
+  "aiGalleryImages": [
+    {
+      "id": 1,
+      "title": "专业服务团队",
+      "description": "我们的专业团队随时为您服务",
+      "image": "",
+      "icon": "👨‍💼"
+    },
+    {
+      "id": 2,
+      "title": "客户案例分享",
+      "description": "成功帮助客户解决保障问题",
+      "image": "",
+      "icon": "🎯"
+    },
+    {
+      "id": 3,
+      "title": "行业交流活动",
+      "description": "参与行业论坛分享专业知识",
+      "image": "",
+      "icon": "🎤"
+    }
+  ],
+  "subpages": [
+    {
+      "id": "demo",
+      "title": "我的专属页面",
+      "description": "这是一个示例子页面",
+      "content": "<h1>欢迎来到我的专属页面！</h1><p>这是通过子网页生成器创建的示例页面。您可以使用右上角的\"生成子网页\"按钮创建自己的专属页面。</p><p>这个功能可以让您在本站基础上创建属于自己的个人展示页面。</p>",
+      "theme": "cyber",
+      "created": "2026-07-29T15:53:29.645Z"
+    }
+  ],
+  "_meta": {
+    "lastUpdated": "2026-07-29T17:35:27.965Z",
+    "updatedBy": "军哥懂保",
+    "version": "2.0",
+    "platform": "github"
+  }
+}
