@@ -325,12 +325,13 @@
     },
     {
       "id": 3,
-      "name": "保单整理助手",
-      "description": "帮助您整理和分析现有保单的保障情况",
+      "name": "批量重命名文件工具",
+      "description": "可以通过访问二维码中的网站（工具）快速批量的对指定路径文件做文件重命名（如：任军学1-999，2026年7月30日1-9999）前缀+数字（自定义）的形式，也可以下PYthon程序本地运行；主要运用场景：批量修改图片名称",
       "icon": "file-alt",
-      "url": "#",
-      "category": "管理工具",
-      "qrCode": true
+      "url": "https://lzp5133084.github.io/batch-rename-tool/",
+      "category": "批量修改文件名,批量处理",
+      "qrCode": true,
+      "updated": "2026-07-30T05:42:30.443Z"
     },
     {
       "name": "语料采集系统",
@@ -536,7 +537,7 @@
     }
   ],
   "_meta": {
-    "lastUpdated": "2026-07-30T05:36:17.954Z",
+    "lastUpdated": "2026-07-30T05:42:33.453Z",
     "updatedBy": "军哥懂保",
     "version": "2.0",
     "platform": "github"
